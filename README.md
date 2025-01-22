@@ -7,6 +7,12 @@
 * https://www.youtube.com/playlist?list=PL5XwKDZZlwaY7t0M5OLprpkJUIrF8Lc9j
 * https://www.youtube.com/playlist?list=PL5XwKDZZlwaY7t0M5OLprpkJUIrF8Lc9j
 
+## CUDA Books
+
+* https://gist.github.com/diorahman/648478c2c5c24d819f0f
+* CUDA cpp (https://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf)
+* 
+
 ## Top Papers to Read
 
 * https://aman.ai/primers/ai/top-30-papers/
