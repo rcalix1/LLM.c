@@ -1,6 +1,7 @@
 # LLM.c
 
 * c implementation of LLMs
+* link 
 
 ## GPU programming
 
