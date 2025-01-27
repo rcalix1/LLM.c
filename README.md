@@ -22,6 +22,8 @@
 * https://arxiv.org/pdf/2402.03300
 * https://arxiv.org/pdf/2501.12948
 * https://github.com/deepseek-ai/DeepSeek-R1/tree/main
+* https://trite-song-d6a.notion.site/Deepseek-R1-for-Everyone-1860af77bef3806c9db5e5c2a256577d
+* 
 
 ## PTX
 
