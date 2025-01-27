@@ -19,7 +19,9 @@
 
 ## DeepSeek
 
-* link
+* https://arxiv.org/pdf/2402.03300
+* https://arxiv.org/pdf/2501.12948
+* 
 
 ## PTX
 
