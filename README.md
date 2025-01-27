@@ -21,7 +21,7 @@
 
 * https://arxiv.org/pdf/2402.03300
 * https://arxiv.org/pdf/2501.12948
-* 
+* https://github.com/deepseek-ai/DeepSeek-R1/tree/main
 
 ## PTX
 
