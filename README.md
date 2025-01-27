@@ -1,7 +1,11 @@
 # LLM.c
 
 * c implementation of LLMs
-* link 
+* link
+
+## C and C++
+
+* https://github.com/rcalix1/CandCPP
 
 ## GPU programming
 
