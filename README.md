@@ -28,7 +28,8 @@
 
 ## PTX
 
-*
+* https://docs.nvidia.com/cuda/pdf/ptx_isa_8.7.pdf
+* 
 
 ## Top Papers to Read
 
