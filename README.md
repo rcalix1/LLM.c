@@ -26,6 +26,7 @@
 * https://unsloth.ai/blog/deepseekr1-dynamic
 * https://github.com/Jiayi-Pan/TinyZero
 * https://github.com/huggingface/open-r1
+* https://arxiv.org/pdf/2201.11903
 * 
 
 ## PTX
