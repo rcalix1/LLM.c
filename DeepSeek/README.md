@@ -227,10 +227,9 @@ The results are mind-boggling: on AIME 2024, one of the most challenging high sc
 * the aggregate demand for training and inference compute should be divided by some big number.
 * Maybe not by 45, but maybe by 25 or even 30? Because whatever you thought you needed before these model releases, it's now a lot less.
 * Now, an optimist might say "You are talking about a mere constant of proportionality,
-*  a single multip e. When you're dealing with an exponential growth curve, that stuff gets washed out so quickly that it doesn't end up matter all that much." And there is some truth to that: if AI really is as transformational as I expect, if the real-world utility of this tech is measured in the trillions, if inference-time compute is the new scaling law of the land, if we are going to have armies of humanoid robots running around doing massive amounts of inference constantly, then maybe the growth curve is still so steep and extreme, and Nvidia has a big enough lead, that it will still work out.
-
-But Nvidia is pricing in a LOT of good news in the coming years for that valuation to make sense, and when you start layering all these things together into a total mosaic, it starts to make me at least feel extremely uneasy about spending ~20x the 2025 estimated sales for their shares. What happens if you even see a slight moderation in sales growth? What if it turns out to be 85% instead of over 100%? What if gross margins come in a bit from 75% to 70%— still ridiculously high for a semiconductor company?
-
+*  a single multip e.
+*  When you're dealing with an exponential growth curve, that stuff gets washed out so quickly
+*   that it doesn't end up matter all that much."
 * Wrapping it All Up
 * At a high level, NVIDIA faces an unprecedented convergence of competitive threats that make its premium
 * valuation increasingly difficult to justify
