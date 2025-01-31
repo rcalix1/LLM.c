@@ -58,7 +58,7 @@
 
 ## Ollama
 
-* link
+* [link](https://ollama.com/library/deepseek-r1)
 * 
 
 ## Local GPU ( If your company needs it )
