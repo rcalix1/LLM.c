@@ -154,13 +154,23 @@
 *  "We are one piece away from a completely
 * sovereign stack on AMD,
 * ----->>>>>> the RDNA3 assembler
-* We have our own driver, runtime, libraries, and emulator. (all in ~12,000 lines!)" Given his track record and skills, it is likely that they will have this all working in the next couple months, and this would allow for a lot of exciting possibilities of using AMD GPUs for all sorts of applications where companies currently feel compelled to pay up for Nvidia GPUs.
-
-OK, well that's just a driver for AMD, and it's not even done yet. What else is there? Well, there are a few other areas on the software side that are a lot more impactful. For one, there is now a massive concerted effort across many large tech companies and the open source software community at large to make more generic AI software frameworks that have CUDA as just one of many "compilation targets".
-
-That is, you write your software using higher-level abstractions, and the system itself can automatically turn those high-level constructs into super well-tuned low-level code that works extremely well on CUDA. But because it's done at this higher level of abstraction, it can just as easily get compiled into low-level code that works extremely well on lots of other GPUs and TPUs from a variety of providers, such as the massive number of custom chips in the pipeline from every big tech company.
-
-The most famous examples of these frameworks are MLX (sponsored primarily by Apple), Triton (sponsored primarily by OpenAI), and JAX (developed by Google). MLX is particularly interesting because it provides a PyTorch-like API that can run efficiently on Apple Silicon, showing how these abstraction layers can enable AI workloads to run on completely different architectures. Triton, meanwhile, has become increasingly popular as it allows developers to write high-performance code that can be compiled to run on various hardware targets without having to understand the low-level details of each platform.
+* We have our own driver, runtime, libraries, and emulator. (all in ~12,000 lines!)"
+* Given his track record and skills, it is likely that they will have this all working in the next couple months,
+*  and this would allow for a lot of exciting possibilities of using AMD GPUs for all sorts of applications
+* there is now a massive concerted effort to make more generic AI software frameworks that have CUDA
+* as just one of many "compilation targets"
+* That is, you write your software using higher-level abstractions, and
+* the system itself can automatically turn those high-level constructs into super well-tuned low-level
+*  code that works extremely well on CUDA.
+* But because it's done at this higher level of abstraction, it can just as easily get
+* compiled into low-level code that works extremely well on lots of other GPUs and TPUs
+*  from a variety of providers, such as the massive number of custom chips in the pipeline from every big tech company.
+* ---->>>>> MLX
+*  The most famous examples of these frameworks are MLX (sponsored primarily by Apple),
+* Triton (sponsored primarily by OpenAI),
+*  and JAX (developed by Google).
+*   MLX is particularly interesting because it provides a PyTorch-like API that can run efficiently on Apple Silicon,
+*    showing how these abstraction layers can enable AI workloads to run on completely different architectures. Triton, meanwhile, has become increasingly popular as it allows developers to write high-performance code that can be compiled to run on various hardware targets without having to understand the low-level details of each platform.
 
 These frameworks allow developers to write their code once using high powered abstractions and then target tons of platforms automatically— doesn't that sound like a better way to do things, which would give you a lot more flexibility in terms of how you actually run the code?
 
