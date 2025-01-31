@@ -3,6 +3,13 @@
 * DeepSeek - zero
 * DeepSeek - R1
 
+## Story of AI is a story about GPUs
+
+* 2012 Imagenet competition - AlexNet
+* 2017 transformers papers - Algorithm is about Attention and being parallell (mother board with 8 GPUs)
+* 2020-2022 GPTS (Generative Pre-trained Transformer) - pre-trained models in parallel cluster
+* 2025 - DeepSeek -> GPU efficiency
+
 ## Some Points (By Andrew Ng)
 
 * A few important trends that have been happening in plain sight:
