@@ -3,7 +3,7 @@
 * DeepSeek - zero
 * DeepSeek - R1
 
-## Some Points
+## Some Points (By Andrew Ng)
 
 * A few important trends that have been happening in plain sight:
 * (i) China is catching up to the U.S. in generative AI, with implications for the AI supply chain
