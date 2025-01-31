@@ -70,4 +70,11 @@
 ## Code and logic
 
 * https://github.com/rcalix1/TransferLearning/blob/main/ChainOfThought/AdvancedDeepLearning/DeepSeekPaperIdeas.ipynb
-* 
+
+## GRPO
+
+![shannon1](GRPO1.gif)
+
+![shannon2](GRPO2.gif)
+
+![shannon3](GRPO3.gif)
