@@ -73,8 +73,8 @@
 
 ## GRPO
 
-![shannon1](GRPO1.gif)
+![shannon1](GRPO1.jpg)
 
-![shannon2](GRPO2.gif)
+![shannon2](GRPO2.jpg)
 
-![shannon3](GRPO3.gif)
+![shannon3](GRPO3.jpg)
