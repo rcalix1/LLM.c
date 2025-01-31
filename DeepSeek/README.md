@@ -134,14 +134,27 @@
 *  And once they have a team and resources, they can design innovative chips (again, perhaps not
 *  even 50% as advanced as an H100, but with that Nvidia gross margin, there is plenty of room to work with) in 2 to 3 years,
 *  and thanks for TSMC, they can turn those into actual silicon using the exact same process node technology as Nvidia.
-
-The Software Threat
-
-As if these looming hardware threats weren't bad enough, there are a few developments in the software world in the last couple years that, while they started out slowly, are now picking up real steam and could pose a serious threat to the software dominance of Nvidia's CUDA. The first of these is the horrible Linux drivers for AMD GPUs. Remember we talked about how AMD has inexplicably allowed these drivers to suck for years despite leaving massive amounts of money on the table?
-
-Well, amusingly enough, the infamous hacker George Hotz (famous for jailbreaking the original iphone as a teenager, and currently the CEO of self-driving startup Comma.ai and AI computer company Tiny Corp, which also makes the open-source tinygrad AI software framework), recently announced that he was sick and tired of dealing with AMD's bad drivers, and desperately wanted to be able to to leverage the lower cost AMD GPUs in their TinyBox AI computers (which come in multiple flavors, some of which use Nvidia GPUs, and some of which use AMD GPUS).
-
-Well, he is making his own custom drivers and software stack for AMD GPUs without any help from AMD themselves; on Jan. 15th of 2025, he tweeted via his company's X account that "We are one piece away from a completely sovereign stack on AMD, the RDNA3 assembler. We have our own driver, runtime, libraries, and emulator. (all in ~12,000 lines!)" Given his track record and skills, it is likely that they will have this all working in the next couple months, and this would allow for a lot of exciting possibilities of using AMD GPUs for all sorts of applications where companies currently feel compelled to pay up for Nvidia GPUs.
+* The Software Threat
+* The first of these is the horrible Linux drivers for AMD GPUs.
+* Remember we talked about how AMD has inexplicably allowed these drivers to suck
+* for years despite leaving massive amounts of money on the table?
+* Well, amusingly enough, the infamous hacker
+* ---->>>>> George Hotz
+*  (famous for jailbreaking
+*  the original iphone as a teenager, and currently the CEO of self-driving
+*   startup Comma.ai and AI computer company Tiny Corp, which also makes
+* the open-source tinygrad AI software framework), recently announced
+* that he was sick and tired of dealing with AMD's bad drivers, and desperately
+*  wanted to be able to to leverage the lower cost AMD GPUs in their
+* TinyBox AI computers (which come in multiple flavors,
+* some of which use Nvidia GPUs, and some of which use AMD GPUS).
+* Well, he is making his own custom drivers and software stack
+*  for AMD GPUs without any help from AMD themselves
+* on Jan. 15th of 2025, he tweeted via his company's X account that
+*  "We are one piece away from a completely
+* sovereign stack on AMD,
+* ----->>>>>> the RDNA3 assembler
+* We have our own driver, runtime, libraries, and emulator. (all in ~12,000 lines!)" Given his track record and skills, it is likely that they will have this all working in the next couple months, and this would allow for a lot of exciting possibilities of using AMD GPUs for all sorts of applications where companies currently feel compelled to pay up for Nvidia GPUs.
 
 OK, well that's just a driver for AMD, and it's not even done yet. What else is there? Well, there are a few other areas on the software side that are a lot more impactful. For one, there is now a massive concerted effort across many large tech companies and the open source software community at large to make more generic AI software frameworks that have CUDA as just one of many "compilation targets".
 
