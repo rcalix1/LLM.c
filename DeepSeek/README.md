@@ -58,4 +58,8 @@
 ## Local GPU ( If your company needs it )
 
 * for about $ 6,000
+
+## Code and logic
+
+* https://github.com/rcalix1/TransferLearning/blob/main/ChainOfThought/AdvancedDeepLearning/DeepSeekPaperIdeas.ipynb
 * 
