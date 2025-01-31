@@ -214,13 +214,20 @@ The full R1 model built on these insights by introducing what they call "cold-st
 
 The results are mind-boggling: on AIME 2024, one of the most challenging high school math competitions, R1 achieved 79.8% accuracy, matching OpenAI's O1 model. On MATH-500, it hit 97.3%, and it achieved the 96.3 percentile on Codeforces programming competitions. But perhaps most impressively, they managed to distill these capabilities down to much smaller models: their 14B parameter version outperforms many models several times its size, suggesting that reasoning ability isn't just about raw parameter count but about how you train the model to process information.
 
-The Fallout
-
-The recent scuttlebutt on Twitter and Blind (a corporate rumor website) is that these models caught Meta completely off guard and that they perform better than the new Llama4 models which are still being trained. Apparently, the Llama project within Meta has attracted a lot of attention internally from high-ranking technical executives, and as a result they have something like 13 individuals working on the Llama stuff who each individually earn more per year in total compensation than the combined training cost for the DeepSeek-V3 models which outperform it. How do you explain that to Zuck with a straight face? How does Zuck keep smiling while shoveling multiple billions of dollars to Nvidia to buy 100k H100s when a better model was trained using just 2k H100s for a bit over $5mm?
-
-But you better believe that Meta and every other big AI lab is taking these DeepSeek models apart, studying every word in those technical reports and every line of the open source code they released, trying desperately to integrate these same tricks and optimizations into their own training and inference pipelines. So what's the impact of all that? Well, naively it sort of seems like the aggregate demand for training and inference compute should be divided by some big number. Maybe not by 45, but maybe by 25 or even 30? Because whatever you thought you needed before these model releases, it's now a lot less.
-
-Now, an optimist might say "You are talking about a mere constant of proportionality, a single multiple. When you're dealing with an exponential growth curve, that stuff gets washed out so quickly that it doesn't end up matter all that much." And there is some truth to that: if AI really is as transformational as I expect, if the real-world utility of this tech is measured in the trillions, if inference-time compute is the new scaling law of the land, if we are going to have armies of humanoid robots running around doing massive amounts of inference constantly, then maybe the growth curve is still so steep and extreme, and Nvidia has a big enough lead, that it will still work out.
+* The Fallout
+* The recent scuttlebutt on Twitter and Blind (a corporate rumor website) is that these models caught Meta completely off guard and that they perform better than the new Llama4 models which are still being trained.
+* Apparently, the Llama project within Meta has attracted a lot of attention internally from high-ranking technical executives,
+* and as a result they have something like 13 individuals working on the Llama stuff who each individually earn more per year in total compensation than the combined training cost for the DeepSeek-V3 models which outperform it.
+* How do you explain that to Zuck with a straight face? How does Zuck keep smiling while shoveling multiple billions of dollars to Nvidia to buy 100k H100s when a better model was trained using just 2k H100s for a bit over $5mm?
+* But you better believe that Meta and every other big AI lab is taking these DeepSeek models apart,
+* studying every word in those technical reports and every line of the open source
+* code they released, trying desperately to integrate these same tric
+* ks and optimizations into their own training and inference pipelin
+* es. So what's the impact of all that? Well, naively it sort of seems like
+* the aggregate demand for training and inference compute should be divided by some big number.
+* Maybe not by 45, but maybe by 25 or even 30? Because whatever you thought you needed before these model releases, it's now a lot less.
+* Now, an optimist might say "You are talking about a mere constant of proportionality,
+*  a single multip e. When you're dealing with an exponential growth curve, that stuff gets washed out so quickly that it doesn't end up matter all that much." And there is some truth to that: if AI really is as transformational as I expect, if the real-world utility of this tech is measured in the trillions, if inference-time compute is the new scaling law of the land, if we are going to have armies of humanoid robots running around doing massive amounts of inference constantly, then maybe the growth curve is still so steep and extreme, and Nvidia has a big enough lead, that it will still work out.
 
 But Nvidia is pricing in a LOT of good news in the coming years for that valuation to make sense, and when you start layering all these things together into a total mosaic, it starts to make me at least feel extremely uneasy about spending ~20x the 2025 estimated sales for their shares. What happens if you even see a slight moderation in sales growth? What if it turns out to be 85% instead of over 100%? What if gross margins come in a bit from 75% to 70%— still ridiculously high for a semiconductor company?
 
