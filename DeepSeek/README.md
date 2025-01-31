@@ -52,6 +52,10 @@
 * GitHub - huggingface/open-r1: Fully open reproduction of DeepSeek-R1
 * https://github.com/huggingface/open-r1
 
+## Hugging Face TRL
+
+* https://github.com/huggingface/trl
+
 
 ## PTX
 
