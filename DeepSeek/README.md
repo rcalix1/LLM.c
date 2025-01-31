@@ -105,62 +105,24 @@
 * which can use just a handful of GPUs—
 * all you need is enough VRAM to store the quantized (compressed) model weights of the already-trained model.
 * The Major Threats
+* After chatGPT, Suddenly, big companies were ready to spend many, many billions of dollars incredibly quickly.
+* NVIDIA was positined perfectly for it
+* The Hardware Level Threat
+* Several new chip makers in the horizon (Cerebras, Groq, Google, which has been developing its own proprietary TPUs , etc.)
+* How should one think about the future of this business when literally every single one of NVIDIA's VIP customers is
+*  building their own custom chips specifically for AI training and inference?
+*  When thinking about all this, you should keep one incredibly important thing in mind: Nvidia is largely an IP based company.
+*  They don't make their own chips.
+*  The true special sauce for making these incredible devices arguably comes more from TSMC,
+*  the actual fab, and ASML, which makes the special EUV lithography machines used by
+*  TSMC to make these leading-edge process node chips.
+*  As much as senior chip designers at Nvidia earn per year, surely some of the best of them could be lured away
+*  by these other tech behemoths for enough cash and stock.
+*  And once they have a team and resources, they can design innovative chips (again, perhaps not
+*  even 50% as advanced as an H100, but with that Nvidia gross margin, there is plenty of room to work with) in 2 to 3 years,
+*  and thanks for TSMC, they can turn those into actual silicon using the exact same process node technology as Nvidia.
 
-At a very high level, you can think of things like this: Nvidia operated in a pretty niche area for a very long time; they had very limited competition, and the competition wasn't particular profitable or growing fast enough to ever pose a real threat, since they didn't have the capital needed to really apply pressure to a market leader like Nvidia. The gaming market was large and growing, but didn't feature earth shattering margins or particularly fabulous year over year growth rates.
-
-A few big tech companies started ramping up hiring and spending on machine learning and AI efforts around 2016-2017, but it was never a truly significant line item for any of them on an aggregate basis— more of a "moonshot" R&D expenditure. But once the big AI race started in earnest with the release of ChatGPT in 2022— only a bit over 2 years ago, although it seems like a lifetime ago in terms of developments— that situation changed very dramatically.
-
-Suddenly, big companies were ready to spend many, many billions of dollars incredibly quickly. The number of researchers showing up at the big research conferences like Neurips and ICML went up very, very dramatically. All the smart students who might have previously studied financial derivatives were instead studying Transformers, and $1mm+ compensation packages for non-executive engineering roles (i.e., for independent contributors not managing a team) became the norm at the leading AI labs.
-
-It takes a while to change the direction of a massive cruise ship; and even if you move really quickly and spend billions, it takes a year or more to build greenfield data centers and order all the equipment (with ballooning lead times) and get it all set up and working. It takes a long time to hire and onboard even smart coders before they can really hit their stride and familiarize themselves with the existing codebases and infrastructure.
-
-But now, you can imagine that absolutely biblical amounts of capital, brainpower, and effort are being expended in this area. And Nvidia has the biggest target of any player on their back, because they are the ones who are making the lion's share of the profits TODAY, not in some hypothetical future where the AI runs our whole lives.
-
-So the very high level takeaway is basically that "markets find a way"; they find alternative, radically innovative new approaches to building hardware that leverage completely new ideas to sidestep barriers that help prop up Nvidia's moat.
-
-The Hardware Level Threat
-
-For example, so-called "wafer scale" AI training chips from Cerebras, which dedicate an entire 300mm silicon wafer to an absolutely gargantuan chip that contains orders of magnitude more transistors and cores on a single chip (see this recent blog post from them explaining how they were able to solve the "yield problem" that had been preventing this approach from being economically practical in the past).
-
-To put this into perspective, if you compare Cerebras' newest WSE-3 chip to Nvidia's flagship data-center GPU, the H100, the Cerebras chip has a total die area of 46,225 square millimeters compared to just 814 for the H100 (and the H100 is itself considered an enormous chip by industry standards); that's a multiple of ~57x! And instead of having 132 "streaming multiprocessor" cores enabled on the chip like the H100 has, the Cerebras chip has ~900,000 cores (granted, each of these cores is smaller and does a lot less, but it's still an almost unfathomably large number in comparison). In more concrete apples-to-apples terms, the Cerebras chip can do around ~32x the FLOPS in AI contexts as a single H100 chip. Since an H100 sells for close to $40k a pop, you can imagine that the WSE-3 chip isn't cheap.
-
-So why does this all matter? Well, instead of trying to battle Nvidia head-on by using a similar approach and trying to match the Mellanox interconnect technology, Cerebras has used a radically innovative approach to do an end-run around the interconnect problem: inter-processor bandwidth becomes much less of an issue when everything is running on the same super-sized chip. You don't even need to have the same level of interconnect because one mega chip replaces tons of H100s.
-
-And the Cerebras chips also work extremely well for AI inference tasks. In fact, you can try it today for free here and use Meta's very respectable Llama-3.3-70B model. It responds basically instantaneously, at ~1,500 tokens per second. To put that into perspective, anything above 30 tokens per second feels relatively snappy to users based on comparisons to ChatGPT and Claude, and even 10 tokens per second is fast enough that you can basically read the response while it's being generated.
-
-Cerebras is also not alone; there are other companies, like Groq (not to be confused with the Grok model family trained by Elon Musk's X AI). Groq has taken yet another innovative approach to solving the same fundamental problem. Instead of trying to compete with Nvidia's CUDA software stack directly, they've developed what they call a "tensor processing unit" (TPU) that is specifically designed for the exact mathematical operations that deep learning models need to perform. Their chips are designed around a concept called "deterministic compute," which means that, unlike traditional GPUs where the exact timing of operations can vary, their chips execute operations in a completely predictable way every single time.
-
-This might sound like a minor technical detail, but it actually makes a massive difference for both chip design and software development. Because the timing is completely deterministic, Groq can optimize their chips in ways that would be impossible with traditional GPU architectures. As a result, they've been demonstrating for the past 6+ months inference speeds of over 500 tokens per second with the Llama series of models and other open source models, far exceeding what's possible with traditional GPU setups. Like Cerebras, this is available today and you can try it for free here.
-
-Using a comparable Llama3 model with "speculative decoding," Groq is able to generate 1,320 tokens per second, on par with Cerebras and far in excess of what is possible using regular GPUs. Now, you might ask what the point is of achieving 1,000+ tokens per second when users seem pretty satisfied with ChatGPT, which is operating at less than 10% of that speed. And the thing is, it does matter. It makes it a lot faster to iterate and not lose focus as a human knowledge worker when you get instant feedback. And if you're using the model programmatically via the API, which is increasingly where much of the demand is coming from, then it can enable whole new classes of applications that require multi-stage inference (where the output of previous stages is used as input in successive stages of prompting/inference) or which require low-latency responses, such as content moderation, fraud detection, dynamic pricing, etc.
-
-But even more fundamentally, the faster you can serve requests, the faster you can cycle things, and the busier you can keep the hardware. Although Groq's hardware is extremely expensive, clocking in at $2mm to $3mm for a single server, it ends up costing far less per request fulfilled if you have enough demand to keep the hardware busy all the time.
-
-And like Nvidia with CUDA, a huge part of Groq's advantage comes from their own proprietary software stack. They are able to take the same open source models that other companies like Meta, DeepSeek, and Mistral develop and release for free, and decompose them in special ways that allow them to run dramatically faster on their specific hardware.
-
-Like Cerebras, they have taken different technical decisions to optimize certain particular aspects of the process, which allows them to do things in a fundamentally different way. In Groq's case, it's because they are entirely focused on inference level compute, not on training: all their special sauce hardware and software only give these huge speed and efficiency advantages when doing inference on an already trained model.
-
-But if the next big scaling law that people are excited about is for inference level compute— and if the biggest drawback of COT models is the high latency introduced by having to generate all those intermediate logic tokens before they can respond— then even a company that only does inference compute, but which does it dramatically faster and more efficiently than Nvidia can— can introduce a serious competitive threat in the coming years. At the very least, Cerebras and Groq can chip away at the lofty expectations for Nvidia's revenue growth over the next 2-3 years that are embedded in the current equity valuation.
-
-Besides these particularly innovative, if relatively unknown, startup competitors, there is some serious competition coming from some of Nvidia's biggest customers themselves who have been making custom silicon that specifically targets AI training and inference workloads. Perhaps the best known of these is Google, which has been developing its own proprietary TPUs since 2016. Interestingly, although it briefly sold TPUs to external customers, Google has been using all its TPUs internally for the past several years, and it is already on its 6th generation of TPU hardware.
-
-Amazon has also been developing its own custom chips called Trainium2 and Inferentia2. And while Amazon is building out data centers featuring billions of dollars of Nvidia GPUs, they are also at the same time investing many billions in other data centers that use these internal chips. They have one cluster that they are bringing online for Anthropic that features over 400k chips.
-
-Amazon gets a lot of flak for totally bungling their internal AI model development, squandering massive amounts of internal compute resources on models that ultimately are not competitive, but the custom silicon is another matter. Again, they don't necessarily need their chips to be better and faster than Nvidia's. What they need is for their chips to be good enough, but build them at a breakeven gross margin instead of the ~90%+ gross margin that Nvidia earns on its H100 business.
-
-OpenAI has also announced their plans to build custom chips, and they (together with Microsoft) are obviously the single largest user of Nvidia's data center hardware. As if that weren't enough, Microsoft have themselves announced their own custom chips!
-
-And Apple, the most valuable technology company in the world, has been blowing away expectations for years now with their highly innovative and disruptive custom silicon operation, which now completely trounces the CPUs from both Intel and AMD in terms of performance per watt, which is the most important factor in mobile (phone/tablet/laptop) applications. And they have been making their own internally designed GPUs and "Neural Processors" for years, even though they have yet to really demonstrate the utility of such chips outside of their own custom applications, like the advanced software based image processing used in the iPhone's camera.
-
-While Apple's focus seems somewhat orthogonal to these other players in terms of its mobile-first, consumer oriented, "edge compute" focus, if it ends up spending enough money on its new contract with OpenAI to provide AI services to iPhone users, you have to imagine that they have teams looking into making their own custom silicon for inference/training (although given their secrecy, you might never even know about it directly!).
-
-Now, it's no secret that there is a strong power law distribution of Nvidia's hyper-scaler customer base, with the top handful of customers representing the lion's share of high-margin revenue. How should one think about the future of this business when literally every single one of these VIP customers is building their own custom chips specifically for AI training and inference?
-
-When thinking about all this, you should keep one incredibly important thing in mind: Nvidia is largely an IP based company. They don't make their own chips. The true special sauce for making these incredible devices arguably comes more from TSMC, the actual fab, and ASML, which makes the special EUV lithography machines used by TSMC to make these leading-edge process node chips. And that's critically important, because TSMC will sell their most advanced chips to anyone who comes to them with enough up-front investment and is willing to guarantee a certain amount of volume. They don't care if it's for Bitcoin mining ASICs, GPUs, TPUs, mobile phone SoCs, etc.
-
-As much as senior chip designers at Nvidia earn per year, surely some of the best of them could be lured away by these other tech behemoths for enough cash and stock. And once they have a team and resources, they can design innovative chips (again, perhaps not even 50% as advanced as an H100, but with that Nvidia gross margin, there is plenty of room to work with) in 2 to 3 years, and thanks for TSMC, they can turn those into actual silicon using the exact same process node technology as Nvidia.
-
-The Software Threat(s)
+The Software Threat
 
 As if these looming hardware threats weren't bad enough, there are a few developments in the software world in the last couple years that, while they started out slowly, are now picking up real steam and could pose a serious threat to the software dominance of Nvidia's CUDA. The first of these is the horrible Linux drivers for AMD GPUs. Remember we talked about how AMD has inexplicably allowed these drivers to suck for years despite leaving massive amounts of money on the table?
 
@@ -262,17 +224,44 @@ Now, an optimist might say "You are talking about a mere constant of proportiona
 
 But Nvidia is pricing in a LOT of good news in the coming years for that valuation to make sense, and when you start layering all these things together into a total mosaic, it starts to make me at least feel extremely uneasy about spending ~20x the 2025 estimated sales for their shares. What happens if you even see a slight moderation in sales growth? What if it turns out to be 85% instead of over 100%? What if gross margins come in a bit from 75% to 70%— still ridiculously high for a semiconductor company?
 
-Wrapping it All Up
-
-At a high level, NVIDIA faces an unprecedented convergence of competitive threats that make its premium valuation increasingly difficult to justify at 20x forward sales and 75% gross margins. The company's supposed moats in hardware, software, and efficiency are all showing concerning cracks. The whole world— thousands of the smartest people on the planet, backed by untold billions of dollars of capital resources— are trying to assail them from every angle.
-
-On the hardware front, innovative architectures from Cerebras and Groq demonstrate that NVIDIA's interconnect advantage— a cornerstone of its data center dominance— can be circumvented through radical redesigns. Cerebras' wafer-scale chips and Groq's deterministic compute approach deliver compelling performance without needing NVIDIA's complex interconnect solutions. More traditionally, every major NVIDIA customer (Google, Amazon, Microsoft, Meta, Apple) is developing custom silicon that could chip away at high-margin data center revenue. These aren't experimental projects anymore— Amazon alone is building out massive infrastructure with over 400,000 custom chips for Anthropic.
-
-The software moat appears equally vulnerable. New high-level frameworks like MLX, Triton, and JAX are abstracting away CUDA's importance, while efforts to improve AMD drivers could unlock much cheaper hardware alternatives. The trend toward higher-level abstractions mirrors how assembly language gave way to C/C++, suggesting CUDA's dominance may be more temporary than assumed. Most importantly, we're seeing the emergence of LLM-powered code translation that could automatically port CUDA code to run on any hardware target, potentially eliminating one of NVIDIA's strongest lock-in effects.
-
-Perhaps most devastating is DeepSeek's recent efficiency breakthrough, achieving comparable model performance at approximately 1/45th the compute cost. This suggests the entire industry has been massively over-provisioning compute resources. Combined with the emergence of more efficient inference architectures through chain-of-thought models, the aggregate demand for compute could be significantly lower than current projections assume. The economics here are compelling: when DeepSeek can match GPT-4 level performance while charging 95% less for API calls, it suggests either NVIDIA's customers are burning cash unnecessarily or margins must come down dramatically.
-
-The fact that TSMC will manufacture competitive chips for any well-funded customer puts a natural ceiling on NVIDIA's architectural advantages. But more fundamentally, history shows that markets eventually find a way around artificial bottlenecks that generate super-normal profits. When layered together, these threats suggest NVIDIA faces a much rockier path to maintaining its current growth trajectory and margins than its valuation implies. With five distinct vectors of attack— architectural innovation, customer vertical integration, software abstraction, efficiency breakthroughs, and manufacturing democratization— the probability that at least one succeeds in meaningfully impacting NVIDIA's margins or growth rate seems high. At current valuations, the market isn't pricing in any of these risks.
+* Wrapping it All Up
+* At a high level, NVIDIA faces an unprecedented convergence of competitive threats that make its premium
+* valuation increasingly difficult to justify
+*  The company's supposed moats in hardware, software, and efficiency are all showing concerning cracks.
+*  The whole world— thousands of the smartest people on the planet, backed by untold billions
+*  of dollars of capital resources— are trying to assail them from every angle.
+*  On the hardware front, innovative architectures from Cerebras and Groq demonstrate that NVIDIA's interconnect
+*  advantage— a cornerstone of its data center dominance— can be circumvented through radical redesigns.
+*  Cerebras' wafer-scale chips and Groq's deterministic compute approach deliver compelling
+*  performance without needing NVIDIA's complex interconnect solutions.
+*  More traditionally, every major NVIDIA customer (Google, Amazon, Microsoft, Meta, Apple) is developing custom
+*  silicon that could chip away at high-margin data center revenue.
+*  These aren't experimental projects anymore— Amazon alone is building out massive infrastructure
+*   with over 400,000 custom chips for Anthropic.
+*   The software moat appears equally vulnerable.
+*   New high-level frameworks like MLX, Triton, and JAX are abstracting away CUDA's importance, while efforts to improve
+*   AMD drivers could unlock much cheaper hardware alternatives.
+*   The trend toward higher-level abstractions mirrors how assembly language gave way to C/C++, suggesting CUDA's
+*   dominance may be more temporary than assumed.
+*   Most importantly, we're seeing the emergence of LLM-powered code translation that could automatically
+*   port CUDA code to run on any hardware target, potentially eliminating one of NVIDIA's strongest lock-in effects.
+*   Perhaps most devastating is DeepSeek's recent efficiency breakthrough, achieving comparable model performance
+*   at approximately 1/45th the compute cost.
+*   This suggests the entire industry has been massively over-provisioning compute resources.
+*   Combined with the emergence of more efficient inference architectures through chain-of-thought models,
+*   the aggregate demand for compute could be significantly lower than current projections assume.
+*    The economics here are compelling: when DeepSeek can match GPT-4 level performance while charging 95% less for API calls,
+*     it suggests either NVIDIA's customers are burning cash unnecessarily or margins must come down dramatically.
+* The fact that TSMC will manufacture competitive chips for any well-funded customer puts a natural
+* ceiling on NVIDIA's architectural advantages.
+* But more fundamentally, history shows that markets eventually find a way around artificial bottlenecks
+* that generate super-normal profits.
+* When layered together, these threats suggest NVIDIA faces a much rockier path to maintaining its current
+* growth trajectory and margins than its valuation implies.
+*  With five distinct vectors of attack— architectural innovation, customer vertical integration, software abstraction,
+*  efficiency breakthroughs, and manufacturing democratization— the probability that at least one succeeds
+*  in meaningfully impacting NVIDIA's margins or growth rate seems high.
+*  
 
 ## DeepSeek papers
 
