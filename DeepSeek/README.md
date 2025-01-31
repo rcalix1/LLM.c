@@ -57,7 +57,8 @@
 
 ## Local GPU ( If your company needs it )
 
-* for about $ 6,000
+* for about $ 6,000 you can build your GPU powerful enough to run DeepSeek-R1
+* $ 6,000 obviously buys you a lot of Cloud Computing time 
 
 ## Code and logic
 
