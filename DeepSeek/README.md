@@ -31,6 +31,12 @@
 * It is now clear that open source/open weight models are a key part of the AI supply chain
 * Many companies will use them: AWS, Azure, Hugginface, Dell, etc. 
 * If the U.S. continues to slow down  open source, China will come to dominate this part of the supply chain
+* Jevons paradox
+* In economics, the Jevons paradox ( sometimes Jevons effect) occurs when technological
+* advancements make a resource more efficient to use (thereby reducing the amount needed for a single application)
+* however, as the cost of using the resource drops, overall demand increases causing
+* total resource consumption to rise
+* Jevons paradox
 * By some extimates, OpenAI’s o1 costs $60 per million output tokens
 * DeepSeek R1 costs $2.19 per million output tokens
 * This nearly 30x difference brought the trend of falling prices to the attention of many people.
