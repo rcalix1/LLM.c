@@ -297,9 +297,66 @@ But Nvidia is pricing in a LOT of good news in the coming years for that valuati
 
 ## Local GPU ( If your company needs it )
 
+* By Matthew carrigan 
 * to run the larger models such as the 671b you need a powerful computer or the cloud
 * for about $ 6,000 you can build your GPU powerful enough to run DeepSeek-R1
-* $ 6,000 obviously buys you a lot of Cloud Computing time 
+* $ 6,000 obviously buys you a lot of Cloud Computing time
+* Complete hardware + software setup for running Deepseek-R1 locally.
+* The actual model, no distillations, and Q8 quantization for full quality.
+* Total cost, $6,000.
+* Motherboard: Gigabyte MZ73-LM0 or MZ73-LM1.
+* We want 2 EPYC sockets to get a massive 24 channels of DDR5 RAM to max out that memory size and bandwidth.
+* https://t.co/GCYsoYaKvZ
+* CPU: 2x any AMD EPYC 9004 or 9005 CPU.
+* LLM generation is bottlenecked by memory bandwidth, so you don't need a top-end one.
+* Get the 9115 or even the 9015 if you really want to cut costs
+* https://www.newegg.com/p/N82E16819113865
+* RAM: This is the big one. We are going to need 768GB (to fit the model) across 24 RAM channels
+* (to get the bandwidth to run it fast enough). That means 24 x 32GB DDR5-RDIMM modules.
+* Example kits
+* https://v-color.net/products/ddr5-ecc-rdimm-servermemory?variant=44758742794407
+* https://www.newegg.com/nemix-ram-384gb/p/1X5-003Z-01FM7
+* Case: You can fit this in a standard tower case, but make sure it has screw mounts
+*  for a full server motherboard, which most consumer cases won't.
+*  The Enthoo Pro 2 Server will take this motherboard:
+*  https://t.co/m1KoTor49h
+*  PSU: The power use of this system is surprisingly low! (<400W)
+*  However, you will need lots of CPU power cables for 2 EPYC CPUs.
+*  The Corsair HX1000i has enough, but you might be able to find a cheaper option:
+*  https://www.corsair.com/us/en/p/psu/cp-9020259-na/hx1000i-fully-modular-ultra-low-noise-platinum-atx-1000-watt-pc-power-supply-cp-9020259-na
+* heatsink: This is a tricky bit.
+* AMD EPYC is socket SP5, and most heatsinks for SP5 assume you have a 2U/4U server blade,
+* which we don't for this build.
+* https://www.ebay.com/itm/226499280220
+* And if you find the fans that come with that heatsink noisy,
+* replacing with 1 or 2 of these per heatsink instead will be efficient and whisper-quiet:
+* https://t.co/CaEwtoxRZj
+* the SSD: Any 1TB or larger SSD that can fit R1 is fine.
+*  recommend NVMe, just because you'll have to copy 700GB into RAM when you start the mode
+*  And that's your system!
+*  Put it all together and throw Linux on it.
+*  Also, an important tip: Go into the BIOS and set the number of NUMA groups to 0.
+*  This will ensure that every layer of the model is interleaved across all RAM chips, doubling our throughput.
+*  Don't forget!
+*  Now, software. Follow the instructions here to install llama.cpp
+*  https://github.com/ggerganov/llama.cpp
+*  ext, the model.
+*  Time to download 700 gigabytes of weights from @huggingface!
+*  Grab every file in the Q8_0 folder here:
+*  https://t.co/9ni1Miw73O
+*  Believe it or not, you're almost done. There are more elegant ways to set it up, but for a quick demo,
+*  just do this.
+*  llama-cli -m ./DeepSeek-R1.Q8_0-00001-of-00015.gguf --temp 0.6 -no-cnv -c 16384 -p "<｜User｜>How many Rs are there in strawberry?<｜Assistant｜>"
+*  If all goes well, you should witness a short load period followed by the stream
+*  of consciousness as a state-of-the-art local LLM begins to ponder your question:
+*  And once it passes that test, just use llama-server to host the model and pass requests in from
+*  your other software.
+*  You now have frontier-level intelligence hosted entirely on your local machine, all open-source and free to use!
+*  and if you got this far: Yes, there's no GPU in this build!
+*  If you want to host on GPU for faster generation speed, you can! which will probably cost $100k+
+*  the generation speed on this build is 6 to 8 tokens per second, depending on the specific CPU and RAM speed
+*  you get, or slightly less if you have a long chat history.
+
 
 ## Code and logic
 
