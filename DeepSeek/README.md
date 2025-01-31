@@ -59,10 +59,11 @@
 ## Ollama
 
 * [link](https://ollama.com/library/deepseek-r1)
-* 
+* For a standard mac I ran deepseek-7b (7 billion parameters)
 
 ## Local GPU ( If your company needs it )
 
+* to run the larger models such as the 671b you need a powerful computer or the cloud
 * for about $ 6,000 you can build your GPU powerful enough to run DeepSeek-R1
 * $ 6,000 obviously buys you a lot of Cloud Computing time 
 
