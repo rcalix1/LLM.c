@@ -33,6 +33,26 @@
 
 * link
 * https://youtubetranscriptoptimizer.com/blog/05_the_short_case_for_nvda
+
+## DeepSeek papers and links 
+
+* https://arxiv.org/pdf/2402.03300
+* https://arxiv.org/pdf/2501.12948
+* https://github.com/deepseek-ai/DeepSeek-R1/tree/main
+* https://trite-song-d6a.notion.site/Deepseek-R1-for-Everyone-1860af77bef3806c9db5e5c2a256577d
+* https://unsloth.ai/blog/deepseekr1-dynamic
+* https://github.com/Jiayi-Pan/TinyZero
+* https://github.com/huggingface/open-r1
+* https://arxiv.org/pdf/2201.11903
+* 
+
+## PTX
+
+* https://docs.nvidia.com/cuda/pdf/ptx_isa_8.7.pdf
+
+## Ollama
+
+* link
 * 
 
 ## Local GPU ( If your company needs it )
