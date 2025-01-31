@@ -23,7 +23,7 @@
 * In contrast, a number of U.S. companies have pushed for regulation to stifle open source by hyping up hypothetical AI dangers such as human extinction.
 * It is now clear that open source/open weight models are a key part of the AI supply chain
 * Many companies will use them: AWS, Azure, Hugginface, Dell, etc. 
-* If the U.S. continues to low down  open source, China will come to dominate this part of the supply chain
+* If the U.S. continues to slow down  open source, China will come to dominate this part of the supply chain
 * By some extimates, OpenAI’s o1 costs $60 per million output tokens
 * DeepSeek R1 costs $2.19 per million output tokens
 * This nearly 30x difference brought the trend of falling prices to the attention of many people.
