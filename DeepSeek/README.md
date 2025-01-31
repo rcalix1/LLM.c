@@ -13,7 +13,7 @@
 * https://youtubetranscriptoptimizer.com/blog/05_the_short_case_for_nvda
 * 
 
-## Local GPU ( If you company needs merit is)
+## Local GPU ( If your company needs it )
 
 * for about $ 6,000
 * 
