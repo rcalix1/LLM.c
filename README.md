@@ -44,6 +44,13 @@
 
 ## Notes
 
-* Remember the llm.c repro of the GPT-2 (124M) training run? It took 45 min on 8xH100. Since then, @kellerjordan0 (and by now many others) have iterated on that extensively in the new modded-nanogpt repo that achieves the same result, now in only 5 min! Love this repo 👏 600 LOC
-* karpathy (@Andrej Karpathy) posted: Remember the llm.c repro of the GPT-2 (124M) training run? It took 45 min on 8xH100. Since then, @kellerjordan0 (and by now many others) have iterated on that extensively in the new modded-nanogpt repo that achieves the same result, now in only 5 min!
-Love this repo 👏 600 LOC https://x.com/karpathy/status/1859305141385691508?s=51
+* Remember the llm.c repro of the GPT-2 (124M) training run?
+* It took 45 min on 8xH100.
+* Since then, @kellerjordan0 (and by now many others) have iterated on that extensively in the new modded-nanogpt repo that achieves the same result
+* now in only 5 min! 
+* karpathy (@Andrej Karpathy) posted:
+* Remember the llm.c repro of the GPT-2 (124M) training run?
+* It took 45 min on 8xH100.
+* Since then, @kellerjordan0 (and by now many others) have iterated on that extensively in the new modded-nanogpt repo that achieves the same result,
+* now in only 5 min!
+
