@@ -31,7 +31,7 @@
 * It is now clear that open source/open weight models are a key part of the AI supply chain
 * Many companies will use them: AWS, Azure, Hugginface, Dell, etc. 
 * If the U.S. continues to slow down  open source, China will come to dominate this part of the supply chain
-* **Jevons paradox**
+* <ins>**Jevons paradox**</ins>
 * In economics, the Jevons paradox ( sometimes Jevons effect) occurs when technological
 * advancements make a resource more efficient to use (thereby reducing the amount needed for a single application)
 * however, as the cost of using the resource drops, overall demand increases causing
