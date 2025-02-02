@@ -44,22 +44,16 @@
 ## Antoine Blodeau
 
 * Monday's NVIDIA stock correction is vastly overblown. This is NOT a "Sputnik moment".
-
-Here are a few thoughts in no particular order of importance:
-
-1. no-one in the West is going to build an enterprise app and scaled consumer apps on a Chinese API. On the other hand, the fully open sourced DeepSeek AI model will be super useful to many, and as shown by the traffic on Hugging Face, it already is. That's more innovation in an already extremely competitive ecosystem.
-
-2. Deepseek is built off of Western open source approaches with a surdose of Reinforcement Learning, and Multi-Head Latent Attention, a ground-breaking approach explained in details here (https://lnkd.in/d54p5U5i) by my dear colleague Alberto Pelliccione, that reduces the amount of memory required to compute a transformer's attention by a factor of 7.5x to 20x. But Deepseek would not exist without Meta Facebook's Llama open source disclosures. Conversely, if indeed Deepseek's V3 and R1 model training methodologies can be verified, then the US LLM providers will follow suit, and compete.
-
-3. China will do well in the AI space, as the country has a large number of very talented scientists, but the businesses Chinese firms build will be broadly constrained to operating within the Chinese domestic market.
-
-4. As demonstrated by OpenAI's recent product releases (e.g. Operator), the action is moving towards productization and distribution, i.e. end-user value creation and revenue generation. Sam Altman is building an AI-enabled business, so are Microsoft, Meta, Google.
-
-5. Deepseek is great competition for OpenAI, Google, Anthropic, but these firms do not need Deepseek to feel the heat. Competition within US big tech is so intense already that innovation and business building efforts are on an unprecedented scale. And that is going to compound under the Trump administration's deregulation approach. China is the only country that can try and keep up.
-
-6. In my book I definitely want LLMs to be as compute-light as possible so that I can assign freed-up GPUs to do multi-modal processing, including video of course, work on spatial intelligence for robotics, or crunch DNA sequences for virus mutation predictions. Each of these problems (and hundreds of others) are massively compute-intensive. It is not like we are going to run out of problems to solve, Deepseek or not.
-
-7. Breakthroughs in the AI race are assessed on a daily/weekly/monthly basis. Moats do not last. This is not rocket engineering in the 50s and 60s. Here, startups and big tech alike move at breakneck speed to precisely break things as fast as they can at any layer of the stack. ChatGPT was a welcome "accident", in my view Deepseek is a similar, welcome, accident. These accidents happen in places where smart people tinker. Critical mass of talent (tinkerers), critical mass of compute, and an environment that rewards innovation, will continue to win the day(s), and that combination is found first and foremost in Silicon Valley.
+* no-one in the West is going to build an enterprise app and scaled consumer apps on a Chinese API. On the other hand, the fully open sourced DeepSeek AI model will be super useful to many, and as shown by the traffic on Hugging Face, it already is.
+* China will do well in the AI space, as the country has a large number of very talented scientists, but the businesses Chinese firms build will be broadly constrained to operating within the Chinese domestic market.
+* In my book I definitely want LLMs to be as compute-light as possible so that I can assign freed-up GPUs to do multi-modal processing,
+* including video of course, work on spatial intelligence for robotics, or crunch DNA sequences for virus mutation predictions.
+* Each of these problems (and hundreds of others) are massively compute-intensive.
+* It is not like we are going to run out of problems to solve, Deepseek or not.
+* Breakthroughs in the AI race are assessed on a daily/weekly/monthly basis. Moats do not last.
+* This is not rocket engineering in the 50s and 60s. Here, startups and big tech alike move at breakneck speed to precisely break things as fast as they can at any layer of the stack.
+* ChatGPT was a welcome "accident", in my view Deepseek is a similar, welcome, accident.
+* These accidents happen in places where smart people tinker. Critical mass of talent (tinkerers), critical mass of compute, and an environment that rewards innovation, will continue to win the day(s), and that combination is found first and foremost in Silicon Valley.
 
 
 ## GPUs and NVIDIA
@@ -190,75 +184,161 @@ Here are a few thoughts in no particular order of importance:
 * Triton (sponsored primarily by OpenAI),
 *  and JAX (developed by Google).
 *   MLX is particularly interesting because it provides a PyTorch-like API that can run efficiently on Apple Silicon,
-*    showing how these abstraction layers can enable AI workloads to run on completely different architectures. Triton, meanwhile, has become increasingly popular as it allows developers to write high-performance code that can be compiled to run on various hardware targets without having to understand the low-level details of each platform.
+*    showing how these abstraction layers can enable AI workloads to run on completely different architectures.
+*    Triton, meanwhile, has become increasingly popular as it allows developers to write high-performance code that can be compiled to run on various hardware targets without having to understand the low-level details of each platform.
+*    These frameworks allow developers to write their code once using high powered abstractions and then target tons of
+*    platforms automatically— doesn't that sound like a better way to do things,
+*    which would give you a lot more flexibility in terms of how you actually run the code?
+*    In the 1980s, all the most popular, best selling software was written in hand-tuned assembly language.
+*     Over time, compilers kept getting better and better, and every time the CPU architectures
+* changed (say, from Intel releasing the 486, then the Pentium, and so on), that hand-rolled
+* assembler would often have to be thrown out and rewritten, something that only the smartest
+*  coders were capable of (sort of like how CUDA experts are on a different level in the job market
+*   versus a "regular" software developer).
+*   Eventually, things converged so that the speed benefits of hand-rolled assembly were outweighed
+*    dramatically by the flexibility of being able to write code in a high-level language
+*    like C or C++, where you rely on the compiler to make things run really optimally on the given CPU.
+*    key idea
+*    key idea
+*        another area where you might see things change dramatically is that CUDA might very well
+*    end up being more of a high level abstraction itself— a "specification language" similar to
+*     Verilog (used as the industry standard to describe chip layouts) that skilled developers
+* can use to describe high-level algorithms that involve massive parallelism (since they are
+* already familiar with it, it's very well constructed, it's the lingua franca, etc.),
+* but then instead of having that code compiled for use on Nvidia GPUs like you would normally do,
+* it can instead be fed as source code into an LLM which can port it into whatever low-level
+* code is understood by the new Cerebras chip, or the new Amazon Trainium2, or the new Google TPUv6, etc.
+* key idea end
+* key idea end
+* <ins>**The Theoretical Threat**</ins>
+*  These models are called DeepSeek-V3 (basically their answer to GPT-4o
+*    and Claude3.5 Sonnet) and DeepSeek-R1 (basically their answer to OpenAI's O1 model).
+*    DeepSeek  as a quant trading hedge fund similar to TwoSigma or RenTec,
+*  By some measurements, over ~45x more efficiently than other leading-edge models.
+*  DeepSeek claims that the complete cost to train DeepSeek-V3 was just over $5mm.
+*  That is absolutely nothing by the standards of OpenAI, Anthropic, etc., which were well
+*  into the $100mm+ level for training costs for a single model as early as 2024.
+*  A major innovation is their sophisticated mixed-precision training framework that
+*  lets them use 8-bit floating point numbers (FP8) throughout the entire training process.
+*  Most Western AI labs train using "full precision" 32-bit numbers (this basically specifies
+*   the number of gradations possible in describing the output of an artificial neuron;
+*    8 bits in FP8 lets you store a much wider range of numbers than you might expect— it's not
+*    just limited to 256 different equal-sized magnitudes like you'd get with regular integers,
+*     but instead uses clever math tricks to store both very small and very large numbers—
+* though naturally with less precision than you'd get with 32 bits.)
+*  The main tradeoff is that while FP32 can store numbers with incredible precision across
+*  an enormous range, FP8 sacrifices some of that precision to save memory and boost performance,
+*  while still maintaining enough accuracy for many AI workloads.
+*  DeepSeek cracked this problem by developing a clever system that breaks numbers
+*  into small tiles for activations and blocks for weights, and strategically uses high-precision
+*  calculations at key points in the network. Unlike other labs that train in high precision
+*  and then compress later (losing some quality in the process), DeepSeek's native FP8 approach
+*  means they get the massive memory savings without compromising performance.
+*  When you're training across thousands of GPUs, this dramatic reduction in memory
+*  requirements per GPU translates into needing far fewer GPUs overall.
+*  Another major breakthrough is their multi-token prediction system.
+*  Most Transformer based LLM models do inference by predicting the next token— one token at a time.
+*  DeepSeek figured out how to predict multiple tokens while maintaining the quality you'd
+*  get from single-token prediction.
+*  Their approach achieves about 85-90% accuracy on these additional token predictions,
+*  which effectively doubles inference speed without sacrificing much quality.
+*  The clever part is they maintain the complete causal chain of predictions,
+*  so the model isn't just guessing— it's making structured, contextual predictions.
+*  One of their most innovative developments is what they call Multi-head Latent Attention (MLA).
+*  This is a breakthrough in how they handle what are called the Key-Value indices,
+*  which are basically how individual tokens are represented in the attention mechanism within
+*  the Transformer architecture.
+*  Although this is getting a bit too advanced in technical terms, suffice it to say that
+*  these KV indices are some of the major uses of VRAM during the training and inference process,
+*  and part of the reason why you need to use thousands of GPUs at the same time to train these models
+*  — each GPU has a maximum of 96 gb of VRAM, and these indices eat that memory up for breakfast.
+*  Their MLA system finds a way to store a compressed version of these indices that captures
+*  the essential information while using far less memory.
+*  The brilliant part is this compression is built directly into how the model learns— it's not some
+*   separate step they need to do, it's built directly into the end-to-end training pipeline.
+*   This means that the entire mechanism is "differentiable" and able to be trained directly using
+*   the standard optimizers.
+*   All this stuff works because these models are ultimately finding much lower-dimensional
+*    representations of the underlying data than the so-called "ambient dimensions".
+*    So it's wasteful to store the full KV indices, even though that is basically what everyone else does.
+*    Not only do you end up wasting tons of space by storing way more numbers than you need,
+*     which gives a massive boost to the training memory footprint and efficiency (again,
+* slashing the number of GPUs you need to train a world class model), but it can actually end up
+* improving model quality because it can act like a "regularizer,"
+* forcing the model to pay attention to the truly important stuff instead of using the wasted
+*  capacity to fit to noise in the training data.
+*  They also made major advances in GPU communication efficiency through their DualPipe algorithm
+*  and custom communication kernels.
+*  This system intelligently overlaps computation and communication, carefully balancing GPU resources
+*   between these tasks.
+*   They only need about 20 of their GPUs' streaming multiprocessors (SMs) for communication,
+*   leaving the rest free for computation.
+*   The result is much higher GPU utilization than typical training setups achieve.
+*   Another very smart thing they did is to use what is known as a Mixture-of-Experts (MOE) Transformer
+*   architecture, but with key innovations around load balancing.
+*   As you might know, the size or capacity of an AI model is often measured in terms of the number
+*    of parameters the model contains.
+*    A parameter is just a number that stores some attribute of the model;
+*    either the "weight" or importance a particular artificial neuron has relative to another one,
+*    or the importance of a particular token depending on its context (in the "attention mechanism")
+* Meta's latest Llama3 models come in a few sizes, for example: a 1 billion parameter version
+* (the smallest), a 70B parameter model (the most commonly deployed one), and even a massive
+*  405B parameter model.
+*  This largest model is of limited utility for most users because you would need to have tens
+*   of thousands of dollars worth of GPUs in your computer just to run at tolerable speeds for inference,
+*   at least if you deployed it in the naive full-precision version.
+*   Therefore most of the real-world usage and excitement surrounding these open source models is at
+*    the 8B parameter or highly quantized 70B parameter level, since that's what can fit in a
+*    consumer-grade Nvidia 4090 GPU, which you can buy now for under $1,000.
+*    So why does any of this matter? Well, in a sense, the parameter count and precision
+*    tells you something about how much raw information or data the model has stored internally.
+*     Note that I'm not talking about reasoning ability, or the model's "IQ" if you will:
+* it turns out that models with even surprisingly modest parameter counts can show remarkable
+*  cognitive performance when it comes to solving complex logic problems, proving theorems in plane
+*  geometry, SAT math problems, etc.
+*  But those small models aren't going to be able to necessarily tell you every aspect of every
+*   plot twist in every single novel by Stendhal, whereas the really big models can potentially do that.
+*   The "cost" of that extreme level of knowledge is that the models become very unwieldy both
+*   to train and to do inference on, because you always need to store every single one of
+*    those 405B parameters (or whatever the parameter count is) in the GPU's VRAM
+*    at the same time in order to do any inference with the model.
+*    The beauty of the MOE model approach is that you can decompose the big model into a collection
+*     of smaller models that each know different, non-overlapping (at least fully) pieces of knowledge.
+* DeepSeek's innovation here was developing what they call an "auxiliary-loss-free" load balancing
+* strategy that maintains efficient expert utilization without the usual performance degradation that
+*  comes from load balancing.
+*   Then, depending on the nature of the inference request, you can intelligently route the inference
+*    to the "expert" models within that collection of smaller models that are most able to answer
+*    that question or solve that task.
+*    You can loosely think of it as being a committee of experts who have their own specialized
+*    knowledge domains: one might be a legal expert, the other a computer science expert, the other
+*    a business strategy expert. So if a question comes in about linear algebra, you don't give it to
+*    the legal expert.
+*    This is of course a very loose analogy and it doesn't actually work like this in practice.
+*    The real advantage of this approach is that it allows the model to contain a huge amount of
+*     knowledge without being very unwieldy, because even though the aggregate number of parameters
+*  is high across all the experts, only a small subset of these parameters is "active" at any
+*   given time, which means that you only need to store this small subset of weights in VRAM in order
+*   to do inference.
+*   In the case of DeepSeek-V3, they have an absolutely massive MOE model with 671B parameters,
+*   so it's much bigger than even the largest Llama3 model, but only 37B of these parameters are
+*    active at any given time— enough to fit in the VRAM of two consumer-grade Nvidia 4090 GPUs
+*    (under $2,000 total cost), rather than requiring one or more H100 GPUs which cost something
+*    like $40k each.
+*    It's rumored that both ChatGPT and Claude use an MoE architecture, with some leaks suggesting
+*     that GPT-4 had a total of 1.8 trillion parameters split across 8 models containing 220 billion
+*  parameters each.
+*  Despite that being a lot more doable than trying to fit all 1.8 trillion parameters in VRAM,
+*  it still requires multiple H100-grade GPUs just to run the model because of the massive amount
+*   of memory used.
+*   Beyond what has already been described, the technical papers mention several other key optimizations.
+*   These include their extremely memory-efficient training framework that avoids tensor parallelism,
+*    recomputes certain operations during backpropagation instead of storing them,
+*     and shares parameters between the main model and auxiliary prediction modules.
+*  The sum total of all these innovations, when layered together, has led to the ~45x efficiency
+*  improvement numbers that have been tossed around online,
+* A Model That Can Really Think
 
-These frameworks allow developers to write their code once using high powered abstractions and then target tons of platforms automatically— doesn't that sound like a better way to do things, which would give you a lot more flexibility in terms of how you actually run the code?
-
-In the 1980s, all the most popular, best selling software was written in hand-tuned assembly language. The PKZIP compression utility for example was hand crafted to maximize speed, to the point where a competently coded version written in the standard C programming language and compiled using the best available optimizing compilers at the time, would run at probably half the speed of the hand-tuned assembly code. The same is true for other popular software packages like WordStar, VisiCalc, and so on.
-
-Over time, compilers kept getting better and better, and every time the CPU architectures changed (say, from Intel releasing the 486, then the Pentium, and so on), that hand-rolled assembler would often have to be thrown out and rewritten, something that only the smartest coders were capable of (sort of like how CUDA experts are on a different level in the job market versus a "regular" software developer). Eventually, things converged so that the speed benefits of hand-rolled assembly were outweighed dramatically by the flexibility of being able to write code in a high-level language like C or C++, where you rely on the compiler to make things run really optimally on the given CPU.
-
-Nowadays, very little new code is written in assembly. I believe a similar transformation will end up happening for AI training and inference code, for similar reasons: computers are good at optimization, and flexibility and speed of development is increasingly the more important factor— especially if it also allows you to save dramatically on your hardware bill because you don't need to keep paying the "CUDA tax" that gives Nvidia 90%+ margins.
-
-Yet another area where you might see things change dramatically is that CUDA might very well end up being more of a high level abstraction itself— a "specification language" similar to Verilog (used as the industry standard to describe chip layouts) that skilled developers can use to describe high-level algorithms that involve massive parallelism (since they are already familiar with it, it's very well constructed, it's the lingua franca, etc.), but then instead of having that code compiled for use on Nvidia GPUs like you would normally do, it can instead be fed as source code into an LLM which can port it into whatever low-level code is understood by the new Cerebras chip, or the new Amazon Trainium2, or the new Google TPUv6, etc. This isn't as far off as you might think; it's probably already well within reach using OpenAI's latest O3 model, and surely will be possible generally within a year or two.
-
-The Theoretical Threat
-
-Perhaps the most shocking development which was alluded to earlier happened in the last couple of weeks. And that is the news that has totally rocked the AI world, and which has been dominating the discourse among knowledgeable people on Twitter despite its complete absence from any of the mainstream media outlets: that a small Chinese startup called DeepSeek released two new models that have basically world-competitive performance levels on par with the best models from OpenAI and Anthropic (blowing past the Meta Llama3 models and other smaller open source model players such as Mistral). These models are called DeepSeek-V3 (basically their answer to GPT-4o and Claude3.5 Sonnet) and DeepSeek-R1 (basically their answer to OpenAI's O1 model).
-
-Why is this all so shocking? Well, first of all, DeepSeek is a tiny Chinese company that reportedly has under 200 employees. The story goes that they started out as a quant trading hedge fund similar to TwoSigma or RenTec, but after Xi Jinping cracked down on that space, they used their math and engineering chops to pivot into AI research. Who knows if any of that is really true or if they are merely some kind of front for the CCP or the Chinese military. But the fact remains that they have released two incredibly detailed technical reports, for DeepSeek-V3 and DeepSeekR1.
-
-These are heavy technical reports, and if you don't know a lot of linear algebra, you probably won't understand much. But what you should really try is to download the free DeepSeek app on the AppStore here and install it using a Google account to log in and give it a try (you can also install it on Android here), or simply try it out on your desktop computer in the browser here. Make sure to select the "DeepThink" option to enable chain-of-thought (the R1 model) and ask it to explain parts of the technical reports in simple terms.
-
-This will simultaneously show you a few important things:
-
-One, this model is absolutely legit. There is a lot of BS that goes on with AI benchmarks, which are routinely gamed so that models appear to perform great on the benchmarks but then suck in real world tests. Google is certainly the worst offender in this regard, constantly crowing about how amazing their LLMs are, when they are so awful in any real world test that they can't even reliably accomplish the simplest possible tasks, let alone challenging coding tasks. These DeepSeek models are not like that— the responses are coherent, compelling, and absolutely on the same level as those from OpenAI and Anthropic.
-
-Two, that DeepSeek has made profound advancements not just in model quality, but more importantly in model training and inference efficiency. By being extremely close to the hardware and by layering together a handful of distinct, very clever optimizations, DeepSeek was able to train these incredible models using GPUs in a dramatically more efficient way. By some measurements, over ~45x more efficiently than other leading-edge models. DeepSeek claims that the complete cost to train DeepSeek-V3 was just over $5mm. That is absolutely nothing by the standards of OpenAI, Anthropic, etc., which were well into the $100mm+ level for training costs for a single model as early as 2024.
-
-How in the world could this be possible? How could this little Chinese company completely upstage all the smartest minds at our leading AI labs, which have 100 times more resources, headcount, payroll, capital, GPUs, etc? Wasn't China supposed to be crippled by Biden's restriction on GPU exports? Well, the details are fairly technical, but we can at least describe them at a high level. It might have just turned out that the relative GPU processing poverty of DeepSeek was the critical ingredient to make them more creative and clever, necessity being the mother of invention and all.
-
-A major innovation is their sophisticated mixed-precision training framework that lets them use 8-bit floating point numbers (FP8) throughout the entire training process. Most Western AI labs train using "full precision" 32-bit numbers (this basically specifies the number of gradations possible in describing the output of an artificial neuron; 8 bits in FP8 lets you store a much wider range of numbers than you might expect— it's not just limited to 256 different equal-sized magnitudes like you'd get with regular integers, but instead uses clever math tricks to store both very small and very large numbers— though naturally with less precision than you'd get with 32 bits.) The main tradeoff is that while FP32 can store numbers with incredible precision across an enormous range, FP8 sacrifices some of that precision to save memory and boost performance, while still maintaining enough accuracy for many AI workloads.
-
-DeepSeek cracked this problem by developing a clever system that breaks numbers into small tiles for activations and blocks for weights, and strategically uses high-precision calculations at key points in the network. Unlike other labs that train in high precision and then compress later (losing some quality in the process), DeepSeek's native FP8 approach means they get the massive memory savings without compromising performance. When you're training across thousands of GPUs, this dramatic reduction in memory requirements per GPU translates into needing far fewer GPUs overall.
-
-Another major breakthrough is their multi-token prediction system. Most Transformer based LLM models do inference by predicting the next token— one token at a time. DeepSeek figured out how to predict multiple tokens while maintaining the quality you'd get from single-token prediction. Their approach achieves about 85-90% accuracy on these additional token predictions, which effectively doubles inference speed without sacrificing much quality. The clever part is they maintain the complete causal chain of predictions, so the model isn't just guessing— it's making structured, contextual predictions.
-
-One of their most innovative developments is what they call Multi-head Latent Attention (MLA). This is a breakthrough in how they handle what are called the Key-Value indices, which are basically how individual tokens are represented in the attention mechanism within the Transformer architecture. Although this is getting a bit too advanced in technical terms, suffice it to say that these KV indices are some of the major uses of VRAM during the training and inference process, and part of the reason why you need to use thousands of GPUs at the same time to train these models— each GPU has a maximum of 96 gb of VRAM, and these indices eat that memory up for breakfast.
-
-Their MLA system finds a way to store a compressed version of these indices that captures the essential information while using far less memory. The brilliant part is this compression is built directly into how the model learns— it's not some separate step they need to do, it's built directly into the end-to-end training pipeline. This means that the entire mechanism is "differentiable" and able to be trained directly using the standard optimizers. All this stuff works because these models are ultimately finding much lower-dimensional representations of the underlying data than the so-called "ambient dimensions". So it's wasteful to store the full KV indices, even though that is basically what everyone else does.
-
-Not only do you end up wasting tons of space by storing way more numbers than you need, which gives a massive boost to the training memory footprint and efficiency (again, slashing the number of GPUs you need to train a world class model), but it can actually end up improving model quality because it can act like a "regularizer," forcing the model to pay attention to the truly important stuff instead of using the wasted capacity to fit to noise in the training data. So not only do you save a ton of memory, but the model might even perform better. At the very least, you don't get a massive hit to performance in exchange for the huge memory savings, which is generally the kind of tradeoff you are faced with in AI training.
-
-They also made major advances in GPU communication efficiency through their DualPipe algorithm and custom communication kernels. This system intelligently overlaps computation and communication, carefully balancing GPU resources between these tasks. They only need about 20 of their GPUs' streaming multiprocessors (SMs) for communication, leaving the rest free for computation. The result is much higher GPU utilization than typical training setups achieve.
-
-Another very smart thing they did is to use what is known as a Mixture-of-Experts (MOE) Transformer architecture, but with key innovations around load balancing. As you might know, the size or capacity of an AI model is often measured in terms of the number of parameters the model contains. A parameter is just a number that stores some attribute of the model; either the "weight" or importance a particular artificial neuron has relative to another one, or the importance of a particular token depending on its context (in the "attention mechanism"), etc.
-
-Meta's latest Llama3 models come in a few sizes, for example: a 1 billion parameter version (the smallest), a 70B parameter model (the most commonly deployed one), and even a massive 405B parameter model. This largest model is of limited utility for most users because you would need to have tens of thousands of dollars worth of GPUs in your computer just to run at tolerable speeds for inference, at least if you deployed it in the naive full-precision version. Therefore most of the real-world usage and excitement surrounding these open source models is at the 8B parameter or highly quantized 70B parameter level, since that's what can fit in a consumer-grade Nvidia 4090 GPU, which you can buy now for under $1,000.
-
-So why does any of this matter? Well, in a sense, the parameter count and precision tells you something about how much raw information or data the model has stored internally. Note that I'm not talking about reasoning ability, or the model's "IQ" if you will: it turns out that models with even surprisingly modest parameter counts can show remarkable cognitive performance when it comes to solving complex logic problems, proving theorems in plane geometry, SAT math problems, etc.
-
-But those small models aren't going to be able to necessarily tell you every aspect of every plot twist in every single novel by Stendhal, whereas the really big models can potentially do that. The "cost" of that extreme level of knowledge is that the models become very unwieldy both to train and to do inference on, because you always need to store every single one of those 405B parameters (or whatever the parameter count is) in the GPU's VRAM at the same time in order to do any inference with the model.
-
-The beauty of the MOE model approach is that you can decompose the big model into a collection of smaller models that each know different, non-overlapping (at least fully) pieces of knowledge. DeepSeek's innovation here was developing what they call an "auxiliary-loss-free" load balancing strategy that maintains efficient expert utilization without the usual performance degradation that comes from load balancing. Then, depending on the nature of the inference request, you can intelligently route the inference to the "expert" models within that collection of smaller models that are most able to answer that question or solve that task.
-
-You can loosely think of it as being a committee of experts who have their own specialized knowledge domains: one might be a legal expert, the other a computer science expert, the other a business strategy expert. So if a question comes in about linear algebra, you don't give it to the legal expert. This is of course a very loose analogy and it doesn't actually work like this in practice.
-
-The real advantage of this approach is that it allows the model to contain a huge amount of knowledge without being very unwieldy, because even though the aggregate number of parameters is high across all the experts, only a small subset of these parameters is "active" at any given time, which means that you only need to store this small subset of weights in VRAM in order to do inference. In the case of DeepSeek-V3, they have an absolutely massive MOE model with 671B parameters, so it's much bigger than even the largest Llama3 model, but only 37B of these parameters are active at any given time— enough to fit in the VRAM of two consumer-grade Nvidia 4090 GPUs (under $2,000 total cost), rather than requiring one or more H100 GPUs which cost something like $40k each.
-
-It's rumored that both ChatGPT and Claude use an MoE architecture, with some leaks suggesting that GPT-4 had a total of 1.8 trillion parameters split across 8 models containing 220 billion parameters each. Despite that being a lot more doable than trying to fit all 1.8 trillion parameters in VRAM, it still requires multiple H100-grade GPUs just to run the model because of the massive amount of memory used.
-
-Beyond what has already been described, the technical papers mention several other key optimizations. These include their extremely memory-efficient training framework that avoids tensor parallelism, recomputes certain operations during backpropagation instead of storing them, and shares parameters between the main model and auxiliary prediction modules. The sum total of all these innovations, when layered together, has led to the ~45x efficiency improvement numbers that have been tossed around online, and I am perfectly willing to believe these are in the right ballpark.
-
-One very strong indicator that it's true is the cost of DeepSeek's API: despite this nearly best-in-class model performance, DeepSeek charges something like 95% less money for inference requests via its API than comparable models from OpenAI and Anthropic. In a sense, it's sort of like comparing Nvidia's GPUs to the new custom chips from competitors: even if they aren't quite as good, the value for money is so much better that it can still be a no-brainer depending on the application, as long as you can qualify the performance level and prove that it's good enough for your requirements and the API availability and latency is good enough (thus far, people have been amazed at how well DeepSeek's infrastructure has held up despite the truly incredible surge of demand owing to the performance of these new models).
-
-But unlike the case of Nvidia, where the cost differential is the result of them earning monopoly gross margins of 90%+ on their data-center products, the cost differential of the DeepSeek API relative to the OpenAI and Anthropic API could be simply that they are nearly 50x more compute efficient (it might even be significantly more than that on the inference side— the ~45x efficiency was on the training side). Indeed, it's not even clear that OpenAI and Anthropic are making great margins on their API services— they might be more interested in revenue growth and gathering more data from analyzing all the API requests they receive.
-
-Before moving on, I'd be remiss if I didn't mention that many people are speculating that DeepSeek is simply lying about the number of GPUs and GPU hours spent training these models because they actually possess far more H100s than they are supposed to have given the export restrictions on these cards, and they don't want to cause trouble for themselves or hurt their chances of acquiring more of these cards. While it's certainly possible, I think it's more likely that they are telling the truth, and that they have simply been able to achieve these incredible results by being extremely clever and creative in their approach to training and inference. They explain how they are doing things, and I suspect that it's only a matter of time before their results are widely replicated and confirmed by other researchers at various other labs.
-
-A Model That Can Really Think
-
-The newer R1 model and technical report might even be even more mind blowing, since they were able to beat Anthropic to Chain-of-thought and now are basically the only ones besides OpenAI who have made this technology work at scale. But note that the O1 preview model was only released by OpenAI in mid-September of 2024. That's only ~4 months ago! Something you absolutely must keep in mind is that, unlike OpenAI, which is incredibly secretive about how these models really work at a low level, and won't release the actual model weights to anyone besides partners like Microsoft and other who sign heavy-duty NDAs, these DeepSeek models are both completely open-source and permissively licensed. They have released extremely detailed technical reports explaining how they work, as well as the code that anyone can look at and try to copy.
 
 With R1, DeepSeek essentially cracked one of the holy grails of AI: getting models to reason step-by-step without relying on massive supervised datasets. Their DeepSeek-R1-Zero experiment showed something remarkable: using pure reinforcement learning with carefully crafted reward functions, they managed to get models to develop sophisticated reasoning capabilities completely autonomously. This wasn't just about solving problems— the model organically learned to generate long chains of thought, self-verify its work, and allocate more computation time to harder problems.
 
@@ -430,6 +510,7 @@ The results are mind-boggling: on AIME 2024, one of the most challenging high sc
 
 * https://github.com/rcalix1/TransferLearning/blob/main/ChainOfThought/AdvancedDeepLearning/DeepSeekPaperIdeas.ipynb
 * https://gist.github.com/willccbb/4676755236bb08cab5f4e54a0475d6fb
+* https://github.com/deepseek-ai
 
 ## DeepSeek Zero for $30
 
