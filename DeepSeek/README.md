@@ -56,7 +56,7 @@
 * These accidents happen in places where smart people tinker. Critical mass of talent (tinkerers), critical mass of compute, and an environment that rewards innovation, will continue to win the day(s), and that combination is found first and foremost in Silicon Valley.
 
 
-## GPUs and NVIDIA
+## GPUs and NVIDIA and DeepSeek
 
 * Article by Jeffrey Emanuel
 * https://youtubetranscriptoptimizer.com/blog/05_the_short_case_for_nvda
