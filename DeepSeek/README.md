@@ -424,3 +424,7 @@ The results are mind-boggling: on AIME 2024, one of the most challenging high sc
 ![shannon2](GRPO2.jpg)
 
 ![shannon3](GRPO3.jpg)
+
+## More DeepSeekCode:
+
+* ![shaDeepSeek](DeepSeekCodeScreen.jpg)
