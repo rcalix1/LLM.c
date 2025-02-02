@@ -431,6 +431,20 @@ The results are mind-boggling: on AIME 2024, one of the most challenging high sc
 * https://github.com/rcalix1/TransferLearning/blob/main/ChainOfThought/AdvancedDeepLearning/DeepSeekPaperIdeas.ipynb
 * https://gist.github.com/willccbb/4676755236bb08cab5f4e54a0475d6fb
 
+## DeepSeek Zero for $30
+
+* https://github.com/Jiayi-Pan/TinyZero
+* TinyZero: Reproduce DeepSeek R1-Zero for $30 → The reproduction was done with Countdown and multiplication tasks using a smaller 3B Qwen
+* base model and Reinforcement Learning. This was achieved with a finetuning cost of less than $30. →
+* The team utilized veRL framework and open-sourced their code as TinyZero on Github.
+* Their experiments show that even a 1.5B model can learn search and self-verification, improving scores, while a 0.5B model struggles with reasoning. → Both base and instruct models work, with instruct models learning faster but reaching similar performance levels.
+* Different RL algorithms like PPO, GRPO, and PRIME were tested and found to be effective. The project aims to democratize RL scaling research in LLMs. The actual process  👶
+* Stage 1: Baby Steps (Dummy Outputs) - Initially, the model is kinda clueless. It's like a baby just babbling – spitting out random equations that probably don't make sense for the problem. Think of it as throwing darts in the dark.  🧠
+* Stage 2: Brain Training (Develop Tactics) - This is where Reinforcement Learning (RL) kicks in! Remember, RL is all about learning through trial and error and getting rewards. The model starts learning strategies. Crucially, it figures out "revision" (how to tweak its answers) and "search" (how to explore different equation possibilities). It's learning to aim those darts.  🎯 Stage 3: Aiming for Bullseye (Propose Solution) - Now, armed with its new tactics, the model actually tries to solve the problem. It proposes an equation, a potential answer. It's taking a shot at the bullseye.  🧐
+* Stage 4: "Hold On, Let Me Check..." (Self-Verify) - Here's the cool part: the model doesn't just blindly trust its first attempt. It self-verifies! It checks if its proposed equation actually works and gets to the target number. It's like checking if the dart actually hit the bullseye.  🔄
+* Stage 5: Try, Try Again (Iteratively Revise) - If the self-check fails (missed the bullseye!), the model goes back to revising. It tweaks the equation, searches for better combinations, and tries again. This loop repeats until it nails the correct answer! Practice makes perfect, even for LLMs! Checkout their Github Repo (in comment) for this project You can learn quite a few things from this Github. RL finetuning recipe for math reasoning in small LLMs (3B).
+* Shows RL can imbue smaller models with complex skills. VeRL framework is key here. Repo uses it for efficient RLHF pipeline, showcasing its flexibility for different algorithms (PPO, GRPO, PRIME). Hybrid Engine (Actor + Rollout) design for efficiency. Crucial for low-cost training. They have a detailed setup, data preprocessing, training scripts, ablation studies. Demonstrates score improvements in Countdown game and ablations on model size and RL algos. Modular design: Easy to extend to new models (FSDP, Megatron backends) and RL algorithms (DPO example).
+
 ## DeepSeek forum type discussions
 
 * https://simonwillison.net/2025/Jan/27/llamacpp-pr/
