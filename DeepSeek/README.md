@@ -407,6 +407,8 @@ The results are mind-boggling: on AIME 2024, one of the most challenging high sc
 ## Code and logic
 
 * https://github.com/rcalix1/TransferLearning/blob/main/ChainOfThought/AdvancedDeepLearning/DeepSeekPaperIdeas.ipynb
+* https://gist.github.com/willccbb/4676755236bb08cab5f4e54a0475d6fb
+* 
 
 ## GRPO explanations
 
