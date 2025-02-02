@@ -337,7 +337,11 @@ The results are mind-boggling: on AIME 2024, one of the most challenging high sc
 * [link](https://ollama.com/library/deepseek-r1)
 * For a standard mac I ran deepseek-7b (7 billion parameters)
 
-## Local GPU ( If your company needs it )
+## Run DeepSeek on local computer  - cost = $ 2,000
+
+* https://www.youtube.com/watch?v=Tq_cmN4j2yY
+
+## Local GPU - cost = $ 6,000
 
 * By Matthew carrigan 
 * to run the larger models such as the 671b you need a powerful computer or the cloud
