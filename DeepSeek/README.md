@@ -338,18 +338,45 @@
 *  The sum total of all these innovations, when layered together, has led to the ~45x efficiency
 *  improvement numbers that have been tossed around online,
 * A Model That Can Really Think
-
-
-With R1, DeepSeek essentially cracked one of the holy grails of AI: getting models to reason step-by-step without relying on massive supervised datasets. Their DeepSeek-R1-Zero experiment showed something remarkable: using pure reinforcement learning with carefully crafted reward functions, they managed to get models to develop sophisticated reasoning capabilities completely autonomously. This wasn't just about solving problems— the model organically learned to generate long chains of thought, self-verify its work, and allocate more computation time to harder problems.
-
-The technical breakthrough here was their novel approach to reward modeling. Rather than using complex neural reward models that can lead to "reward hacking" (where the model finds bogus ways to boost their rewards that don't actually lead to better real-world model performance), they developed a clever rule-based system that combines accuracy rewards (verifying final answers) with format rewards (encouraging structured thinking). This simpler approach turned out to be more robust and scalable than the process-based reward models that others have tried.
-
-What's particularly fascinating is that during training, they observed what they called an "aha moment," a phase where the model spontaneously learned to revise its thinking process mid-stream when encountering uncertainty. This emergent behavior wasn't explicitly programmed; it arose naturally from the interaction between the model and the reinforcement learning environment. The model would literally stop itself, flag potential issues in its reasoning, and restart with a different approach, all without being explicitly trained to do this.
-
-The full R1 model built on these insights by introducing what they call "cold-start" data— a small set of high-quality examples— before applying their RL techniques. They also solved one of the major challenges in reasoning models: language consistency. Previous attempts at chain-of-thought reasoning often resulted in models mixing languages or producing incoherent outputs. DeepSeek solved this through a clever language consistency reward during RL training, trading off a small performance hit for much more readable and consistent outputs.
-
-The results are mind-boggling: on AIME 2024, one of the most challenging high school math competitions, R1 achieved 79.8% accuracy, matching OpenAI's O1 model. On MATH-500, it hit 97.3%, and it achieved the 96.3 percentile on Codeforces programming competitions. But perhaps most impressively, they managed to distill these capabilities down to much smaller models: their 14B parameter version outperforms many models several times its size, suggesting that reasoning ability isn't just about raw parameter count but about how you train the model to process information.
-
+* With R1, DeepSeek essentially cracked one of the holy grails of AI: getting models
+*  to reason step-by-step without relying on massive supervised datasets.
+*   Their DeepSeek-R1-Zero experiment showed something remarkable: using pure reinforcement
+*     learning with carefully crafted reward functions, they managed to get models
+*  to develop sophisticated reasoning capabilities completely autonomously.
+*   This wasn't just about solving problems— the model organically learned to generate
+*    long chains of thought, self-verify its work, and allocate more computation
+*     time to harder problems.
+* The technical breakthrough here was their novel approach to reward modeling.
+*  Rather than using complex neural reward models that can lead to "reward hacking"
+*   (where the model finds bogus ways to boost their rewards that don't actually
+*    lead to better real-world model performance),
+*     they developed a clever rule-based system that combines accuracy rewards
+*  (verifying final answers) with format rewards (encouraging structured thinking).
+*   This simpler approach turned out to be more robust and scalable than the
+*    process-based reward models that others have tried.
+*    What's particularly fascinating is that during training, they observed what
+*     they called an "aha moment," a phase where the model spontaneously learned
+*  to revise its thinking process mid-stream when encountering uncertainty.
+*   This emergent behavior wasn't explicitly programmed; it arose naturally
+*    from the interaction between the model and the reinforcement learning environment.
+*     The model would literally stop itself, flag potential issues in its reasoning,
+*  and restart with a different approach, all without being explicitly trained to do this.
+*  The full R1 model built on these insights by introducing what they call "cold-start"
+*   data— a small set of high-quality examples— before applying their RL techniques.
+*    They also solved one of the major challenges in reasoning models: language consistency.
+*     Previous attempts at chain-of-thought reasoning often resulted in models mixing
+*  languages or producing incoherent outputs.
+*   DeepSeek solved this through a clever language consistency reward during RL training
+*   , trading off a small performance hit for much more readable and consistent outputs.
+*   The results are mind-boggling:
+*   on AIME 2024, one of the most challenging high school
+*   math competitions, R1 achieved 79.8% accuracy, matching OpenAI's O1 model.
+*    On MATH-500, it hit 97.3%, and it achieved the 96.3 percentile on Codeforces programming
+*     competitions.
+*  But perhaps most impressively, they managed to distill these capabilities
+*   down to much smaller models: their 14B parameter version outperforms many models several
+*    times its size, suggesting that reasoning ability isn't just about
+*     raw parameter count but about how you train the model to process information.
 * The Fallout
 * The recent scuttlebutt on Twitter and Blind (a corporate rumor website) is that these models caught Meta completely off guard and that they perform better than the new Llama4 models which are still being trained.
 * Apparently, the Llama project within Meta has attracted a lot of attention internally from high-ranking technical executives,
