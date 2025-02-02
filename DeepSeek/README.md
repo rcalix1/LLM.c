@@ -41,6 +41,26 @@
 * DeepSeek R1 costs $2.19 per million output tokens
 * This nearly 30x difference brought the trend of falling prices to the attention of many people.
 
+## Antoine Blodeau
+
+* Monday's NVIDIA stock correction is vastly overblown. This is NOT a "Sputnik moment".
+
+Here are a few thoughts in no particular order of importance:
+
+1. no-one in the West is going to build an enterprise app and scaled consumer apps on a Chinese API. On the other hand, the fully open sourced DeepSeek AI model will be super useful to many, and as shown by the traffic on Hugging Face, it already is. That's more innovation in an already extremely competitive ecosystem.
+
+2. Deepseek is built off of Western open source approaches with a surdose of Reinforcement Learning, and Multi-Head Latent Attention, a ground-breaking approach explained in details here (https://lnkd.in/d54p5U5i) by my dear colleague Alberto Pelliccione, that reduces the amount of memory required to compute a transformer's attention by a factor of 7.5x to 20x. But Deepseek would not exist without Meta Facebook's Llama open source disclosures. Conversely, if indeed Deepseek's V3 and R1 model training methodologies can be verified, then the US LLM providers will follow suit, and compete.
+
+3. China will do well in the AI space, as the country has a large number of very talented scientists, but the businesses Chinese firms build will be broadly constrained to operating within the Chinese domestic market.
+
+4. As demonstrated by OpenAI's recent product releases (e.g. Operator), the action is moving towards productization and distribution, i.e. end-user value creation and revenue generation. Sam Altman is building an AI-enabled business, so are Microsoft, Meta, Google.
+
+5. Deepseek is great competition for OpenAI, Google, Anthropic, but these firms do not need Deepseek to feel the heat. Competition within US big tech is so intense already that innovation and business building efforts are on an unprecedented scale. And that is going to compound under the Trump administration's deregulation approach. China is the only country that can try and keep up.
+
+6. In my book I definitely want LLMs to be as compute-light as possible so that I can assign freed-up GPUs to do multi-modal processing, including video of course, work on spatial intelligence for robotics, or crunch DNA sequences for virus mutation predictions. Each of these problems (and hundreds of others) are massively compute-intensive. It is not like we are going to run out of problems to solve, Deepseek or not.
+
+7. Breakthroughs in the AI race are assessed on a daily/weekly/monthly basis. Moats do not last. This is not rocket engineering in the 50s and 60s. Here, startups and big tech alike move at breakneck speed to precisely break things as fast as they can at any layer of the stack. ChatGPT was a welcome "accident", in my view Deepseek is a similar, welcome, accident. These accidents happen in places where smart people tinker. Critical mass of talent (tinkerers), critical mass of compute, and an environment that rewards innovation, will continue to win the day(s), and that combination is found first and foremost in Silicon Valley.
+
 
 ## GPUs and NVIDIA
 
