@@ -341,6 +341,8 @@ The results are mind-boggling: on AIME 2024, one of the most challenging high sc
 
 * https://www.youtube.com/watch?v=Tq_cmN4j2yY
 
+![shannon2000](DS2000.jpg)
+
 ## Local GPU - cost = $ 6,000
 
 * By Matthew carrigan 
