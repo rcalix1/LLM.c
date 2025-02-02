@@ -408,6 +408,11 @@ The results are mind-boggling: on AIME 2024, one of the most challenging high sc
 
 * https://github.com/rcalix1/TransferLearning/blob/main/ChainOfThought/AdvancedDeepLearning/DeepSeekPaperIdeas.ipynb
 
+## GRPO explanations
+
+* https://superb-makemake-3a4.notion.site/group-relative-policy-optimization-GRPO-18c41736f0fd806eb39dc35031758885
+* 
+
 ## GRPO
 
 ![shannon1](GRPO1.jpg)
