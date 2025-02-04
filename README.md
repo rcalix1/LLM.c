@@ -17,6 +17,10 @@
 * https://gist.github.com/diorahman/648478c2c5c24d819f0f
 * CUDA cpp (https://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf)
 
+## AMD GPUs
+
+* https://www.amd.com/en/developer/resources/rocm-hub/dev-ai.html?utm_source=marketo&utm_medium=email&utm_campaign=EN-EM-2025-02-04-AEAI-ROCm_Developer_Hub_Launch&utm_content=ROCm&utm_language=EN&utm_term=btn&mkt_tok=ODg1LVpZVC0zNjEAAAGYcRgQ_7jK-lIGibj9mbwUF30B-y1faNjh2DZaYUyuh9rjm120nZkwJcPaHIaTMWEH8VD_wXL180rm5AegxsNu83woTCOfE2Wn40BAgKkTphlupb4
+
 ## DeepSeek
 
 * https://arxiv.org/pdf/2402.03300
