@@ -571,6 +571,10 @@
 
 ![shannon3](GRPO3.jpg)
 
+## DeepSeek Architecture:
+
+* ![shaDeepSeekArch](deepseekArch.jpg)
+
 ## More DeepSeekCode:
 
 * ![shaDeepSeek](DeepSeekCodeScreen.jpg)
