@@ -464,6 +464,11 @@
 * [link](https://ollama.com/library/deepseek-r1)
 * For a standard mac I ran deepseek-7b (7 billion parameters)
 
+## Unsloth
+
+* https://unsloth.ai/blog/r1-reasoning
+* 
+
 ## Run DeepSeek on local computer  - cost = $ 2,000
 
 * https://www.youtube.com/watch?v=Tq_cmN4j2yY
