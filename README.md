@@ -3,6 +3,11 @@
 * c implementation of LLMs
 * link
 
+## Chain of Thought - RLHF
+
+* https://github.com/rcalix1/cotRLHF
+* 
+
 ## C and C++
 
 * https://github.com/rcalix1/CandCPP
