@@ -10,6 +10,13 @@
 * 2020-2022 GPTS (Generative Pre-trained Transformer) - pre-trained models in parallel cluster
 * 2025 - DeepSeek -> GPU efficiency
 
+## S1 - s1: Simple test-time scaling
+
+* https://arxiv.org/pdf/2501.19393
+* https://github.com/simplescaling/s1
+* https://techcrunch.com/2025/02/05/researchers-created-an-open-rival-to-openais-o1-reasoning-model-for-under-50/
+* 
+
 ## Some Points (By Andrew Ng)
 
 * A few important trends that have been happening in plain sight:
