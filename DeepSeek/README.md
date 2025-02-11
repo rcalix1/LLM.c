@@ -587,6 +587,4 @@
 
 * ![shaDeepSeekArch](deepseekArch.jpg)
 
-## More DeepSeekCode:
 
-* ![shaDeepSeek](DeepSeekCodeScreen.jpg)
