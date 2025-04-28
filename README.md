@@ -6,7 +6,7 @@
 ## Chain of Thought - RLHF
 
 * https://github.com/rcalix1/cotRLHF
-* 
+* link
 
 ## C and C++
 
