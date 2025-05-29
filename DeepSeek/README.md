@@ -1,5 +1,6 @@
 # DeepSeek 
 
+* AI BT
 * DeepSeek - zero
 * DeepSeek - R1
 
