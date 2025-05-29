@@ -166,6 +166,77 @@
 
 
 
+## No Code AI and DeepSeek
+
+* link
+
+## 🔧 Expanded Section: DeepSeek AI for No-Code Builders (Hands-On Lab)
+
+### 🧠 Why It Matters
+
+> *“DeepSeek gives us powerful LLM reasoning with zero-code friction. This hands-on lab helps you build real, working business tools without touching Python.”*
+
+---
+
+### 🛠️ Use Case 1: DeepSeek-Powered PDF Summarizer
+
+**Tool:** [FlowiseAI](https://flowiseai.com)
+
+**Goal:** Build a drag-and-drop AI pipeline that takes in a PDF and returns a business summary.
+
+**Steps:**
+1. Go to FlowiseAI and start a new flow.
+2. Add the following nodes:
+   - `PDF Loader`: Ingest a document.
+   - `Text Splitter`: Break it into chunks.
+   - `LLM Completion`: Call DeepSeek's API (via custom HTTP or OpenAI-compatible endpoint).
+   - `Text Output`: Return summary.
+3. Test with an example: upload a product whitepaper or report.
+
+**Business Scenario:**
+- Weekly earnings reports → summarized for execs in plain English.
+
+---
+
+### 🛠️ Use Case 2: Automated Proposal Drafting
+
+**Tool:** [Make.com](https://www.make.com)
+
+**Goal:** Auto-generate business proposals using DeepSeek when a new Airtable row is added.
+
+**Steps:**
+1. Create a new Make.com scenario.
+2. Trigger: `Airtable – New Row`
+3. Action: `HTTP Call` to DeepSeek API
+   - Prompt: “Write a sales proposal for {{company}} using {{product}} features.”
+4. Output: Save result to a Google Doc or send via email.
+
+**Business Scenario:**
+- Marketing team fills in a form, proposal is generated instantly and emailed to the client.
+
+---
+
+### 🛠️ Use Case 3: Insight Assistant for Customer Support
+
+**Tool:** [Zapier](https://zapier.com) + [Chatbase](https://www.chatbase.co/) + DeepSeek API
+
+**Goal:** Auto-respond to customer questions using knowledge base + DeepSeek augmentation.
+
+**Steps:**
+1. Customer sends a question via Google Form or Intercom.
+2. Zapier sends the question to Chatbase for retrieval.
+3. Zapier sends context + question to DeepSeek.
+4. DeepSeek generates natural language reply → sent back via email or live chat.
+
+---
+
+### 🌟 Bonus: Your Challenge
+
+Ask students to **design their own no-code workflow**:
+- Choose a use case (e.g., HR onboarding, product descriptions, investor reports)
+- Choose a tool: Flowise, Make, Zapier, Retool, etc.
+- Sketch it using Lucidchart or on paper
+- *(Optional)* Implement a demo using one of the free tools
 
 
 
