@@ -4,6 +4,171 @@
 * DeepSeek - zero
 * DeepSeek - R1
 
+
+# 📌 Note for GitHub Users
+
+> This content is intended as a masterclass outline and script for business students exploring DeepSeek AI. If you're looking for a structured walkthrough of DeepSeek's business and technical impact — including hands-on demos, discussions, and group activities — you're in the right place.
+
+---
+
+# DeepSeek AI and the Global Race to Intelligence
+
+**Instructor:** Ricardo A. Calix, Ph.D.
+**Audience:** Business students interested in AI
+**Duration:** 90 minutes
+**Delivery Format:** Interactive + Hands-on
+
+---
+
+## Part 1: Introduction – The Global AI Landscape (15 min)
+
+**Read-Aloud Script:**
+
+"Welcome, everyone! Today we're diving into one of the most exciting and fast-moving developments in the AI world — the rise of *DeepSeek AI*, a powerful open-source model out of China that rivals the likes of OpenAI's GPT-4. Why does this matter? Because it's not just a technical marvel — it's a sign that AI is no longer confined to Silicon Valley."
+
+"We’re now in a global race, and China’s AI ambitions are real. Governments are investing, startups are scaling, and entire economies are being shaped by how they harness artificial intelligence."
+
+**Live Poll (Mentimeter/Slido):**
+
+* "What would you use AI for in your future career?"
+
+  * a) Customer service automation
+  * b) Financial forecasting
+  * c) Marketing and content creation
+  * d) Other
+
+**Discussion Prompt:**
+"Based on your answers, what areas do you think AI will replace versus augment?"
+
+---
+
+## Part 2: What is DeepSeek AI? (10 min)
+
+**Script:**
+
+"DeepSeek was founded in 2023 in Hangzhou, China. It’s backed by High-Flyer Capital, a Chinese hedge fund. Their mission is to advance general-purpose artificial intelligence (AGI) and make it widely accessible."
+
+"Think of DeepSeek as China’s answer to OpenAI — but with an open-source twist. Instead of locking down their model, they're making it available to the world."
+
+"There are two key models we’ll look at today: DeepSeek-V3 and DeepSeek-R."
+
+---
+
+## Part 3: Technical Highlights (15 min)
+
+**DeepSeek-V3:**
+
+* "It’s a *Mixture of Experts* (MoE) model. That means it has 671 billion parameters, but only 37 billion are active at any one time."
+* "This makes it very efficient — achieving results similar to GPT-4 but with a training cost of just \~\$6 million."
+* "It uses FP8 mixed precision, which means it does more with less compute."
+
+**DeepSeek-R (Reasoning Model):**
+
+* "Focused on reasoning, math, and code."
+* "It was trained entirely using reinforcement learning — no supervised fine-tuning."
+* "It’s available under the MIT open-source license."
+
+**Takeaway:**
+
+> "DeepSeek models are powerful, affordable, and openly accessible. This has major implications for businesses and developers worldwide."
+
+---
+
+## Part 4: Business Implications (15 min)
+
+**Script:**
+
+"Let’s look at this not just as tech, but as a tool for business. What does DeepSeek mean for your future ventures?"
+
+**Opportunities:**
+
+* "Startups can now access cutting-edge AI without paying OpenAI’s API fees."
+* "Small businesses can automate, summarize, generate, and predict using models trained on massive data."
+
+**Risks:**
+
+* "Data privacy concerns — your data may be processed in China."
+* "Unclear compliance — how do you audit what a large open-source model is doing?"
+
+**Discussion Prompt:**
+"Would you trust an open-source Chinese AI model in your business? Why or why not?"
+
+---
+
+## Part 5: Hands-On Demo (20 min)
+
+**Live Walkthrough:**
+
+* Visit [https://chat.deepseek.com](https://chat.deepseek.com)
+* Prompt examples:
+
+  * "Summarize this financial report for a non-technical manager."
+  * "Give me five growth hacks for a small D2C apparel brand."
+
+**Student Task:**
+
+* Use DeepSeek to improve a business idea or startup concept.
+* Share your result with your neighbor (2 min discussion).
+
+**Bonus Tools (Optional):**
+
+* [https://flowiseai.com](https://flowiseai.com) – drag-and-drop AI workflows.
+* [https://replicate.com](https://replicate.com) – try models instantly.
+
+---
+
+## Part 6: Scenario Workshop (15 min)
+
+**Group Roles:**
+
+1. Startup needing fast/cheap AI.
+2. Enterprise with compliance needs.
+3. Retailer needing chatbots and forecasting.
+
+**Each Group Answers:**
+
+* Should they use DeepSeek or OpenAI?
+* What are the risks and benefits?
+
+**Each group presents their decision.**
+
+---
+
+## Part 7: Ethics & Strategy (10 min)
+
+**Mini Debate Prompt:**
+
+> "Should open-source models like DeepSeek be regulated more than closed models?"
+
+**Facilitate Pros vs. Cons**
+
+* Pro: Risk of misuse, foreign hosting, lack of audit.
+* Con: Innovation, global access, cost reductions.
+
+---
+
+## Wrap-Up & Resources (5 min)
+
+"Today we covered:
+
+* Why DeepSeek matters in the global AI race.
+* What makes its models unique.
+* How you, as future business leaders, can explore and apply these tools."
+
+**Resources:**
+
+* [GitHub Notes](https://github.com/rcalix1/LLM.c/tree/main/DeepSeek)
+* [DeepSeek Chat](https://chat.deepseek.com)
+* [Technical Report (V3)](https://arxiv.org/abs/2412.19437)
+* [DeepSeek GitHub](https://github.com/deepseek-ai)
+
+> “DeepSeek shows that powerful, affordable, open AI is no longer the future—it’s here. Business leaders must now learn how to use it, trust it, and build with it.”
+
+
+
+
+
+
 ## Story of AI is a story about GPUs
 
 * 2012 Imagenet competition - AlexNet
