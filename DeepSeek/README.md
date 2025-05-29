@@ -708,6 +708,114 @@ Ask students to **design their own no-code workflow**:
 * [link](https://ollama.com/library/deepseek-r1)
 * For a standard mac I ran deepseek-7b (7 billion parameters)
 
+
+## 🧠 Bonus Module: Using Ollama to Run DeepSeek-Style Models Locally
+
+> *“Want to run LLMs without the cloud or API keys? Ollama makes it easy to run open models on your laptop. Perfect for fast prototyping or keeping business data private.”*
+
+---
+
+### ✅ What is Ollama?
+
+**Ollama** is a lightweight local model runner that allows you to run open-source LLMs on your machine with minimal setup.
+
+- 🔗 [https://ollama.com](https://ollama.com)
+- 💻 Platforms: macOS, Windows, Linux
+- 🧰 Use Cases: private prototyping, internal tools, no-code AI backends
+
+---
+
+### 🔧 Getting Started with Ollama
+
+1. Download and install Ollama from [https://ollama.com](https://ollama.com)
+2. Run your first model:
+   ```bash
+   ollama run mistral
+   ```
+   > You can replace `mistral` with other models like `llama3`, `gemma`, `phi`, etc.
+
+3. (Optional) Use a custom model:
+   ```bash
+   ollama create deepseek \
+     --modelfile Modelfile
+   ```
+
+4. Query via local API:
+   ```bash
+   curl http://localhost:11434/api/generate -d '{
+     "model": "mistral",
+     "prompt": "Summarize this quarterly financial report in bullet points"
+   }'
+   ```
+
+---
+
+### 💼 Business Use Case 1: Offline Executive Summarizer
+
+- 📝 Summarize internal documents securely.
+- 🔒 Run locally without data leaving your device.
+- 📄 Combine with PDF-to-text tool, pass to Ollama via shell or script.
+- 💬 Prompt:
+  ```text
+  Summarize this text for a CFO in 5 concise bullet points:
+  {insert document text here}
+  ```
+
+---
+
+### 💼 Business Use Case 2: Local Chatbot for Sales Enablement
+
+- 👥 Sales reps ask questions about decks or product specs.
+- 🛠 Tools: Ollama + local chatbot frontend (e.g., LlamaIndex, LangChain UI)
+- 🔐 Fully internal use, great for clients with data restrictions.
+
+---
+
+### 💼 Business Use Case 3: No-Cloud AI Demo for Clients
+
+- 🧪 Build a prototype chatbot or app with **no cloud dependency**.
+- ⚙️ Use Ollama as the LLM engine in tools like:
+  - [Retool](https://retool.com/)
+  - [Bubble](https://bubble.io/)
+  - [Flask / Gradio](https://www.gradio.app/)
+
+---
+
+### 🛠️ No-Code + Ollama Integration Ideas
+
+- Use **Zapier Webhooks** to send data to your local Ollama instance.
+- Use **Make.com HTTP module** to post prompts and return completions.
+- Use **Node-RED** or **n8n** for advanced flows like:
+  - Form submission → local Ollama → Slack or email reply
+  - Voice-to-text → prompt → reply via Telegram
+
+---
+
+### 🧪 Try These Prompts with Ollama
+
+1. **Proposal Generator**  
+   ```
+   Write a business proposal for a startup offering AI-powered inventory forecasting.
+   ```
+
+2. **Email Rewrite**  
+   ```
+   Rewrite the following email to sound more professional and persuasive.
+   ```
+
+3. **Investor Summary**  
+   ```
+   Summarize the following startup pitch for a seed-stage investor in 5 bullets.
+   ```
+
+---
+
+> 💡 Combine Ollama with tools like Flowise, Zapier, Airtable, and more to build private, powerful business workflows — all without writing full code or sending data to the cloud.
+
+
+
+
+
 ## Unsloth
 
 * https://unsloth.ai/blog/r1-reasoning
