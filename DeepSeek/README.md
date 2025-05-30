@@ -14,8 +14,11 @@
 # DeepSeek AI and the Global Race to Intelligence
 
 **Instructor:** Ricardo A. Calix, Ph.D.
+
 **Audience:** Business students interested in AI
+
 **Duration:** 90 minutes
+
 **Delivery Format:** Interactive + Hands-on
 
 ---
