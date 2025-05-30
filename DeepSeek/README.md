@@ -156,23 +156,6 @@
 
 ---
 
-## Wrap-Up & Resources (5 min)
-
-"Today we covered:
-
-* Why DeepSeek matters in the global AI race.
-* What makes its models unique.
-* How you, as future business leaders, can explore and apply these tools."
-
-**Resources:**
-
-* [GitHub Notes](https://github.com/rcalix1/LLM.c/tree/main/DeepSeek)
-* [DeepSeek Chat](https://chat.deepseek.com)
-* [Technical Report (V3)](https://arxiv.org/abs/2412.19437)
-* [DeepSeek GitHub](https://github.com/deepseek-ai)
-
-> “DeepSeek shows that powerful, affordable, open AI is no longer the future—it’s here. Business leaders must now learn how to use it, trust it, and build with it.”
-
 
 
 ## No Code AI and DeepSeek
@@ -1001,6 +984,25 @@ Ask students to **design their own no-code workflow**:
 
 
 ---
+
+## Wrap-Up & Resources (5 min)
+
+"Today we covered:
+
+* Why DeepSeek matters in the global AI race.
+* What makes its models unique.
+* How you, as future business leaders, can explore and apply these tools."
+
+**Resources:**
+
+* [GitHub Notes](https://github.com/rcalix1/LLM.c/tree/main/DeepSeek)
+* [DeepSeek Chat](https://chat.deepseek.com)
+* [Technical Report (V3)](https://arxiv.org/abs/2412.19437)
+* [DeepSeek GitHub](https://github.com/deepseek-ai)
+
+> “DeepSeek shows that powerful, affordable, open AI is no longer the future—it’s here. Business leaders must now learn how to use it, trust it, and build with it.”
+
+
 
 ## 👋 About
 
