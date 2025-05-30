@@ -405,7 +405,11 @@ Ask students to **design their own no-code workflow**:
 
 * After chatGPT, Suddenly, big companies were ready to spend many, many billions of dollars incredibly quickly.
 * NVIDIA was positined perfectly for it
-* The Hardware Level Threat
+
+
+
+## The Hardware Level Threat
+
 * Several new chip makers in the horizon (Cerebras, Groq, Google, which has been developing its own proprietary TPUs , etc.)
 * How should one think about the future of this business when literally every single one of NVIDIA's VIP customers is
 *  building their own custom chips specifically for AI training and inference?
