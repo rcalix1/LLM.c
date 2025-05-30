@@ -135,6 +135,12 @@
 
 **Each group presents their decision.**
 
+* They both have a web platform or API with token
+* OpenAI may have more features
+* OpenAI may be more secure
+* DeepSeek is cheaper
+* Replicate cost 1 cent per query 
+
 ---
 
 ## Part 7: Ethics & Strategy (10 min)
