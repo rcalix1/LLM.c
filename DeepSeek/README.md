@@ -354,7 +354,10 @@ Ask students to **design their own no-code workflow**:
 *  they can try lots of different things and see what's working and keep trying to course-correct and try other approaches
 *  until they can reach a fairly high threshold of confidence
 *  So, inference now is critical and is a different type of computing
-*  But Why Should Nvidia Get to Capture All The Upside?
+*
+
+## But Why Should Nvidia Get to Capture All The Upside?
+
 *  to really understand why Nvidia is currently capturing so much of the pie today.
 *  After all, they aren't the only company that even makes GPUs. AMD makes respectable GPUs that,
 *  on paper, have comparable numbers of transistors, which are made using similar process nodes, etc.
@@ -372,11 +375,11 @@ Ask students to **design their own no-code workflow**:
 *  If you want to hire a bunch of extremely talented programmers who know how to make things go really fast on GPUs,
 *  and pay them $650k/year or whatever the going rate is for people with that particular expertise,
 *  chances are that they are going to "think" and work in CUDA.
-*  <think>
+  
 
 ## Besides software superiority
 
-*  </think>
+
 * the other major thing that Nvidia has going for it is what is known as interconnect— essentially,
 * the bandwidth that connects together thousands of GPUs together efficiently so they can be jointly harnessed to train
 * today's leading-edge foundational models.
@@ -461,8 +464,9 @@ Ask students to **design their own no-code workflow**:
 *   Eventually, things converged so that the speed benefits of hand-rolled assembly were outweighed
 *    dramatically by the flexibility of being able to write code in a high-level language
 *    like C or C++, where you rely on the compiler to make things run really optimally on the given CPU.
-*    key idea
-*    key idea
+  
+## CUDA as a framework to build other drivers for AMD, etc.
+
 *        another area where you might see things change dramatically is that CUDA might very well
 *    end up being more of a high level abstraction itself— a "specification language" similar to
 *     Verilog (used as the industry standard to describe chip layouts) that skilled developers
@@ -568,6 +572,10 @@ Ask students to **design their own no-code workflow**:
 *   to train and to do inference on, because you always need to store every single one of
 *    those 405B parameters (or whatever the parameter count is) in the GPU's VRAM
 *    at the same time in order to do any inference with the model.
+
+
+## MOE
+
 *    The beauty of the MOE model approach is that you can decompose the big model into a collection
 *     of smaller models that each know different, non-overlapping (at least fully) pieces of knowledge.
 * DeepSeek's innovation here was developing what they call an "auxiliary-loss-free" load balancing
@@ -597,13 +605,19 @@ Ask students to **design their own no-code workflow**:
 *  Despite that being a lot more doable than trying to fit all 1.8 trillion parameters in VRAM,
 *  it still requires multiple H100-grade GPUs just to run the model because of the massive amount
 *   of memory used.
+
+## Other Deepseek optimizations
+
 *   Beyond what has already been described, the technical papers mention several other key optimizations.
 *   These include their extremely memory-efficient training framework that avoids tensor parallelism,
 *    recomputes certain operations during backpropagation instead of storing them,
 *     and shares parameters between the main model and auxiliary prediction modules.
 *  The sum total of all these innovations, when layered together, has led to the ~45x efficiency
 *  improvement numbers that have been tossed around online,
-* A Model That Can Really Think
+
+  
+## A  Model That Can Really Think
+
 * With R1, DeepSeek essentially cracked one of the holy grails of AI: getting models
 *  to reason step-by-step without relying on massive supervised datasets.
 *   Their DeepSeek-R1-Zero experiment showed something remarkable: using pure reinforcement
@@ -644,7 +658,7 @@ Ask students to **design their own no-code workflow**:
 *    times its size, suggesting that reasoning ability isn't just about
 *     raw parameter count but about how you train the model to process information.
 
-## The Fallput
+## The Fallout
 
 
 * The recent scuttlebutt on Twitter and Blind (a corporate rumor website) is that these models caught Meta completely off guard and that they perform better than the new Llama4 models which are still being trained.
@@ -662,7 +676,11 @@ Ask students to **design their own no-code workflow**:
 *  a single multip e.
 *  When you're dealing with an exponential growth curve, that stuff gets washed out so quickly
 *   that it doesn't end up matter all that much."
-* Wrapping it All Up
+
+
+
+##  Wrapping it All Up
+
 * At a high level, NVIDIA faces an unprecedented convergence of competitive threats that make its premium
 * valuation increasingly difficult to justify
 *  The company's supposed moats in hardware, software, and efficiency are all showing concerning cracks.
