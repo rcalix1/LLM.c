@@ -278,6 +278,9 @@ Ask students to **design their own no-code workflow**:
 * It is now clear that open source/open weight models are a key part of the AI supply chain
 * Many companies will use them: AWS, Azure, Hugginface, Dell, etc. 
 * If the U.S. continues to slow down  open source, China will come to dominate this part of the supply chain
+
+## Jevons paradox
+
 * <ins>**Jevons paradox**</ins>
 * In economics, the Jevons paradox ( sometimes Jevons effect) occurs when technological
 * advancements make a resource more efficient to use (thereby reducing the amount needed for a single application)
@@ -297,7 +300,10 @@ Ask students to **design their own no-code workflow**:
 * including video of course, work on spatial intelligence for robotics, or crunch DNA sequences for virus mutation predictions.
 * Each of these problems (and hundreds of others) are massively compute-intensive.
 * It is not like we are going to run out of problems to solve, Deepseek or not.
-* Breakthroughs in the AI race are assessed on a daily/weekly/monthly basis. Moats do not last.
+* Breakthroughs in the AI race are assessed on a daily/weekly/monthly basis.
+*
+## Moats do not last
+
 * This is not rocket engineering in the 50s and 60s. Here, startups and big tech alike move at breakneck speed to precisely break things as fast as they can at any layer of the stack.
 * ChatGPT was a welcome "accident", in my view Deepseek is a similar, welcome, accident.
 * These accidents happen in places where smart people tinker. Critical mass of talent (tinkerers), critical mass of compute, and an environment that rewards innovation, will continue to win the day(s), and that combination is found first and foremost in Silicon Valley.
@@ -313,7 +319,9 @@ Ask students to **design their own no-code workflow**:
 * than the combined stock markets of England, France, or Germany!
 * NVIDIA in AI is key.
 * Some scenarios
-* The Bull Case:
+
+## The Bull Case:
+
 * Nvidia has somehow ended up with something close to a monopoly in terms of the share of aggregate
 *  industry capex that is spent on training and inference infrastructure.
 *  Some of the largest and most profitable companies in the world, like Microsoft, Apple, Amazon, Meta, Google, Oracle, etc., have
@@ -325,7 +333,9 @@ Ask students to **design their own no-code workflow**:
 *  New Stargate project hopes to spend half a trillion in infrastructure. A data center is about $ 1.5 billion.
 *  Let us ask DeepSeek-R1 (7b) how many data center this is
 *  link
-*  The New Paradigm:
+  
+## The New Paradigm:
+
 *  What happens to the data center after you pre-trained lots of models. What do you use the aging data center for? 
 *  Inference time compute 
 *  the total amount of inference compute (measured in various ways, such as FLOPS, in GPU memory footprint, etc.)
@@ -363,7 +373,9 @@ Ask students to **design their own no-code workflow**:
 *  and pay them $650k/year or whatever the going rate is for people with that particular expertise,
 *  chances are that they are going to "think" and work in CUDA.
 *  <think>
-*  Besides software superiority
+
+## Besides software superiority
+
 *  </think>
 * the other major thing that Nvidia has going for it is what is known as interconnect— essentially,
 * the bandwidth that connects together thousands of GPUs together efficiently so they can be jointly harnessed to train
@@ -378,7 +390,9 @@ Ask students to **design their own no-code workflow**:
 * output of thousands of GPUs at the same time, than the inference process (including COT inference),
 * which can use just a handful of GPUs—
 * all you need is enough VRAM to store the quantized (compressed) model weights of the already-trained model.
-* The Major Threats
+
+## The Major Threats
+
 * After chatGPT, Suddenly, big companies were ready to spend many, many billions of dollars incredibly quickly.
 * NVIDIA was positined perfectly for it
 * The Hardware Level Threat
@@ -395,7 +409,9 @@ Ask students to **design their own no-code workflow**:
 *  And once they have a team and resources, they can design innovative chips (again, perhaps not
 *  even 50% as advanced as an H100, but with that Nvidia gross margin, there is plenty of room to work with) in 2 to 3 years,
 *  and thanks for TSMC, they can turn those into actual silicon using the exact same process node technology as Nvidia.
-* The Software Threat
+
+## The Software Threat
+
 * The first of these is the horrible Linux drivers for AMD GPUs.
 * Remember we talked about how AMD has inexplicably allowed these drivers to suck
 * for years despite leaving massive amounts of money on the table?
@@ -457,6 +473,9 @@ Ask students to **design their own no-code workflow**:
 * code is understood by the new Cerebras chip, or the new Amazon Trainium2, or the new Google TPUv6, etc.
 * key idea end
 * key idea end
+* 
+## The Theoretical Threat
+
 * <ins>**The Theoretical Threat**</ins>
 *  These models are called DeepSeek-V3 (basically their answer to GPT-4o
 *    and Claude3.5 Sonnet) and DeepSeek-R1 (basically their answer to OpenAI's O1 model).
@@ -624,7 +643,10 @@ Ask students to **design their own no-code workflow**:
 *   down to much smaller models: their 14B parameter version outperforms many models several
 *    times its size, suggesting that reasoning ability isn't just about
 *     raw parameter count but about how you train the model to process information.
-* The Fallout
+
+## The Fallput
+
+
 * The recent scuttlebutt on Twitter and Blind (a corporate rumor website) is that these models caught Meta completely off guard and that they perform better than the new Llama4 models which are still being trained.
 * Apparently, the Llama project within Meta has attracted a lot of attention internally from high-ranking technical executives,
 * and as a result they have something like 13 individuals working on the Llama stuff who each individually earn more per year in total compensation than the combined training cost for the DeepSeek-V3 models which outperform it.
