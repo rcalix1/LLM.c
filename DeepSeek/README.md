@@ -307,7 +307,8 @@ Ask students to **design their own no-code workflow**:
 * Each of these problems (and hundreds of others) are massively compute-intensive.
 * It is not like we are going to run out of problems to solve, Deepseek or not.
 * Breakthroughs in the AI race are assessed on a daily/weekly/monthly basis.
-*
+
+
 ## Moats do not last
 
 * This is not rocket engineering in the 50s and 60s. Here, startups and big tech alike move at breakneck speed to precisely break things as fast as they can at any layer of the stack.
@@ -337,8 +338,8 @@ Ask students to **design their own no-code workflow**:
 *  the number of GPUs, has absolutely exploded and seems to show no sign of slowing down.
 *  And Nvidia is able to earn insanely high 90%+ gross margins on the most high-end, datacenter oriented products.
 *  New Stargate project hopes to spend half a trillion in infrastructure. A data center is about $ 1.5 billion.
-*  Let us ask DeepSeek-R1 (7b) how many data center this is
-*  link
+*  **Prompt** Let us ask DeepSeek-R1 (7b) how many data center this is
+  
   
 ## The New Paradigm:
 
