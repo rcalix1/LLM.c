@@ -269,9 +269,9 @@ Ask students to **design their own no-code workflow**:
 * (i) China is catching up to the U.S. in generative AI, with implications for the AI supply chain
 * (ii) Open weight models  create opportunities for application builders
 * (iii) Scaling up isn’t the only path to AI progress. Despite the massive focus on and hype around processing power, algorithmic innovations are rapidly pushing down training costs.
-* About a week ago, DeepSeek, a company based in China, released DeepSeek-R1, a remarkable model whose performance on benchmarks is comparable to OpenAI’s o1.
+* DeepSeek, a company based in China, released DeepSeek-R1, a remarkable model whose performance on benchmarks is comparable to OpenAI’s o1.
 * Further, it was released as an open weight model with a permissive MIT license.
-* The share prices of Nvidia and a number of other U.S. tech companies plunged this week. (As of the time of writing, some have recovered somewhat.)
+* The share prices of Nvidia and a number of other U.S. tech companies plunged this week. (As of the time of writing, some have recovered.)
 * Here’s what DeepSeek may have caused many people to realize:
 * The world is catching up to the U.S. in generative AI.
 * When ChatGPT was launched in November 2022, the U.S. was significantly ahead of China in generative AI.
