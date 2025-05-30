@@ -1,6 +1,7 @@
 # DeepSeek 
 
 * AI BT
+* DeepSeek AI, implications, and related topics
 * DeepSeek - zero
 * DeepSeek - R1
 
