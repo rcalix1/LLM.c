@@ -171,6 +171,22 @@
 
 ---
 
+### 🛠️ Use Case 0: DeepSeek-Powered CSV Summarizer
+
+**Tool:** Ollama
+
+**Goal:** Give Ollama a CSV and return a business summary.
+
+**Steps:**
+1. Use Ollama.
+2. Write prompt:
+  
+
+**Business Scenario:**
+- Weekly earnings reports → summarized for execs in plain English.
+
+---
+
 ### 🛠️ Use Case 1: DeepSeek-Powered PDF Summarizer
 
 **Tool:** [FlowiseAI](https://flowiseai.com)
