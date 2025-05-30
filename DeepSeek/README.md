@@ -499,6 +499,10 @@ Ask students to **design their own no-code workflow**:
 *  The main tradeoff is that while FP32 can store numbers with incredible precision across
 *  an enormous range, FP8 sacrifices some of that precision to save memory and boost performance,
 *  while still maintaining enough accuracy for many AI workloads.
+*  
+
+## Massive memory savings
+
 *  DeepSeek cracked this problem by developing a clever system that breaks numbers
 *  into small tiles for activations and blocks for weights, and strategically uses high-precision
 *  calculations at key points in the network. Unlike other labs that train in high precision
@@ -507,6 +511,10 @@ Ask students to **design their own no-code workflow**:
 *  When you're training across thousands of GPUs, this dramatic reduction in memory
 *  requirements per GPU translates into needing far fewer GPUs overall.
 *  Another major breakthrough is their multi-token prediction system.
+
+
+## Deepseek handling of tokens in sequence
+
 *  Most Transformer based LLM models do inference by predicting the next token— one token at a time.
 *  DeepSeek figured out how to predict multiple tokens while maintaining the quality you'd
 *  get from single-token prediction.
@@ -537,6 +545,9 @@ Ask students to **design their own no-code workflow**:
 * improving model quality because it can act like a "regularizer,"
 * forcing the model to pay attention to the truly important stuff instead of using the wasted
 *  capacity to fit to noise in the training data.
+
+## GPU communication efficiency
+
 *  They also made major advances in GPU communication efficiency through their DualPipe algorithm
 *  and custom communication kernels.
 *  This system intelligently overlaps computation and communication, carefully balancing GPU resources
@@ -551,6 +562,9 @@ Ask students to **design their own no-code workflow**:
 *    A parameter is just a number that stores some attribute of the model;
 *    either the "weight" or importance a particular artificial neuron has relative to another one,
 *    or the importance of a particular token depending on its context (in the "attention mechanism")
+
+## Very large models
+
 * Meta's latest Llama3 models come in a few sizes, for example: a 1 billion parameter version
 * (the smallest), a 70B parameter model (the most commonly deployed one), and even a massive
 *  405B parameter model.
