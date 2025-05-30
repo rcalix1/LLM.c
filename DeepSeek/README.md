@@ -116,7 +116,7 @@
 **Bonus Tools (Optional):**
 
 * [https://flowiseai.com](https://flowiseai.com) – drag-and-drop AI workflows.
-* [https://replicate.com](https://replicate.com) – try models instantly.
+* [https://replicate.com](https://replicate.com) – try models instantly. Prompt: "I want to build a portal gun for interdimensional travel. Can you help?"
 
 ---
 
