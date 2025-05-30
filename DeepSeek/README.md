@@ -445,6 +445,9 @@ Ask students to **design their own no-code workflow**:
 * But because it's done at this higher level of abstraction, it can just as easily get
 * compiled into low-level code that works extremely well on lots of other GPUs and TPUs
 *  from a variety of providers, such as the massive number of custom chips in the pipeline from every big tech company.
+
+## MLX
+
 * ---->>>>> MLX
 *  The most famous examples of these frameworks are MLX (sponsored primarily by Apple),
 * Triton (sponsored primarily by OpenAI),
