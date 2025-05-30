@@ -502,6 +502,9 @@ Ask students to **design their own no-code workflow**:
 *  DeepSeek claims that the complete cost to train DeepSeek-V3 was just over $5mm.
 *  That is absolutely nothing by the standards of OpenAI, Anthropic, etc., which were well
 *  into the $100mm+ level for training costs for a single model as early as 2024.
+
+## DeepSeek's sophisticated mixed-precision training framework 
+
 *  A major innovation is their sophisticated mixed-precision training framework that
 *  lets them use 8-bit floating point numbers (FP8) throughout the entire training process.
 *  Most Western AI labs train using "full precision" 32-bit numbers (this basically specifies
