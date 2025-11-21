@@ -31,19 +31,7 @@
 
 "Welcome, everyone! Today we're diving into one of the most exciting and fast-moving developments in the AI world — the rise of *DeepSeek AI*, a powerful open-source model out of China that rivals the likes of OpenAI's GPT-4. Why does this matter? Because it's not just a technical marvel — it's a sign that AI is no longer confined to Silicon Valley."
 
-"We’re now in a global race, and China’s AI ambitions are real. Governments are investing, startups are scaling, and entire economies are being shaped by how they harness artificial intelligence."
 
-**Live Poll (Mentimeter/Slido):**
-
-* "What would you use AI for in your future career?"
-
-  * a) Customer service automation
-  * b) Financial forecasting
-  * c) Marketing and content creation
-  * d) Other
-
-**Discussion Prompt:**
-"Based on your answers, what areas do you think AI will replace versus augment?"
 
 ---
 
