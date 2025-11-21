@@ -220,15 +220,6 @@
 
 ---
 
-### 🌟 Bonus: Your Challenge
-
-Ask students to **design their own no-code workflow**:
-- Choose a use case (e.g., HR onboarding, product descriptions, investor reports)
-- Choose a tool: Flowise, Make, Zapier, Retool, etc.
-- Sketch it using Lucidchart or on paper
-- *(Optional)* Implement a demo using one of the free tools
-
-
 
 ## Story of AI is a story about GPUs
 
