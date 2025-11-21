@@ -264,7 +264,7 @@
 
 * <ins>**Jevons paradox**</ins>
 * In economics, the Jevons paradox ( sometimes Jevons effect) occurs when technological
-* advancements make a resource more efficient to use (thereby reducing the amount needed for a single application)
+* advancements make a resource more efficient to use (thereby reducing the cost needed for a single application)
 * however, as the cost of using the resource drops, overall demand increases causing
 * total resource consumption to rise
 * Jevons paradox
