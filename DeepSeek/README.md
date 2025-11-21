@@ -133,8 +133,8 @@
 
 **Facilitate Pros vs. Cons**
 
-* Pro: Risk of misuse, foreign hosting, lack of audit.
-* Con: Innovation, global access, cost reductions.
+* Con: Risk of misuse, foreign hosting, lack of audit.
+* Pro: Innovation, global access, cost reductions.
 
 ---
 
