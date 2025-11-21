@@ -168,23 +168,48 @@
 
 ---
 
-### 🛠️ Use Case 1: DeepSeek-Powered PDF Summarizer
+# DeepSeek Business Reasoning Prompt
 
-**Tool:** [FlowiseAI](https://flowiseai.com)
+## Prompt Title: **Strategic Decision-Making Under Uncertainty**
 
-**Goal:** Build a drag-and-drop AI pipeline that takes in a PDF and returns a business summary.
+### 📌 Use Case
 
-**Steps:**
-1. Go to FlowiseAI and start a new flow.
-2. Add the following nodes:
-   - `PDF Loader`: Ingest a document.
-   - `Text Splitter`: Break it into chunks.
-   - `LLM Completion`: Call DeepSeek's API (via custom HTTP or OpenAI-compatible endpoint).
-   - `Text Output`: Return summary.
-3. Test with an example: upload a product whitepaper or report.
+Demonstrate DeepSeek’s multi-perspective reasoning ability for business audiences. Ideal for showcasing mixture-of-experts (MoE) strengths like financial logic, strategic planning, and trade-off analysis.
 
-**Business Scenario:**
-- Weekly earnings reports → summarized for execs in plain English.
+
+
+### 💬 Prompt
+
+```
+Your company sells high-end electric bicycles.
+
+Sales are down 20% this quarter.
+Your CFO blames inflation and proposes cutting marketing by 40%.
+Your CMO says it's a market share opportunity and wants to increase marketing by 30%.
+
+As CEO, reason through both positions and make a recommendation.
+Justify it with both short-term cash flow and long-term growth considerations.
+```
+
+
+
+### ✅ Why It Works
+
+* Covers **financial logic** (cash flow)
+* Requires **strategic foresight** (growth vs. risk)
+* Great for comparing DeepSeek with other LLMs
+* Helps non-technical audiences see reasoning depth, not just output length
+
+
+
+### 🧠 Optional Comparison
+
+Run same prompt with `mistral` or `llama2` on Ollama and observe:
+
+* Less structured reasoning
+* Less separation of short-term vs. long-term
+* Less awareness of trade-off logic
+
 
 ---
 
