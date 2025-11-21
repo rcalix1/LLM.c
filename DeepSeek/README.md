@@ -27,9 +27,13 @@
 
 ## Part 1: Introduction – The Global AI Landscape (15 min)
 
-**Read-Aloud Script:**
 
-"Welcome, everyone! Today we're diving into one of the most exciting and fast-moving developments in the AI world — the rise of *DeepSeek AI*, a powerful open-source model out of China that rivals the likes of OpenAI's GPT-4. Why does this matter? Because it's not just a technical marvel — it's a sign that AI is no longer confined to Silicon Valley."
+
+"Welcome, everyone! 
+
+Today we're diving into one of the most exciting and fast-moving developments in the AI world — the rise of *DeepSeek AI*, a powerful open-source model out of China that rivals the likes of OpenAI's GPT-4. 
+
+Why does this matter? Because it's not just a technical marvel — it's a sign that AI is no longer confined to Silicon Valley."
 
 
 
