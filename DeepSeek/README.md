@@ -997,6 +997,148 @@
 
 * ![shaDeepSeekArch](deepseekArch.jpg)
 * 
+---
+
+
+# DeePSEEK R1 – Mixture of Experts Demo Prompts (Ollama + 7B)
+
+This README contains a structured demo plan for showcasing the capabilities of **DeePSEEK R1**, a Mixture of Experts (MoE) model, using **Ollama** and a 7B model.
+
+The focus is on **routing, sparsity, reasoning**, and **expert activation**.
+
+---
+
+## 🔍 1. Prompt to Trigger Expert Routing
+
+**Goal**: Show different types of prompts activate different experts.
+
+### Prompt 1: Math Expert
+
+```
+A train leaves Chicago at 3pm traveling 60 mph. Another train leaves New York at 4pm traveling 80 mph. Where do they meet?
+```
+
+Expected: Numerical reasoning expert.
+
+### Prompt 2: Coding Expert
+
+```
+Write a Python function to parse a CSV file and return a dictionary of column averages.
+```
+
+Expected: Code generation expert.
+
+### Prompt 3: Legal Expert
+
+```
+Explain the concept of force majeure in commercial contracts.
+```
+
+Expected: Knowledge expert / legal domain expert.
+
+**Interactive idea**: Ask audience to guess which expert might be used.
+
+---
+
+## 🔁 2. Compare Behavior on Similar Prompts
+
+**Goal**: Show how sparse routing adapts to semantic intent.
+
+### Prompt A:
+
+```
+What is 27 x 43?
+```
+
+### Prompt B:
+
+```
+Why do larger numbers often take longer to multiply mentally?
+```
+
+Prompt A → numerical expert.
+Prompt B → cognitive reasoning expert.
+
+---
+
+## 🧹 3. Reasoning Chain Prompt (Step-by-Step Logic)
+
+**Goal**: Demonstrate multi-step reasoning using routed expert logic.
+
+### Prompt:
+
+```
+If Alice is taller than Bob, and Bob is taller than Claire, who is the shortest?
+
+Now suppose Claire grows 10 cm and Bob stays the same — who is tallest?
+```
+
+Expected: Step-wise reasoning with routing to logical experts.
+
+---
+
+## 🎯 4. Prompt to Show Routing Failure (Optional)
+
+**Goal**: Demonstrate when routing might confuse domains.
+
+### Prompt:
+
+```
+Translate this sentence into SQL: "Show me all orders from Germany in 2021."
+```
+
+Possible confusion between code-gen and retrieval domains.
+
+---
+
+## 🧪 5. Token Efficiency and Sparse Activation
+
+**Goal**: Emphasize the sparse activation property of MoE.
+
+### Prompt:
+
+```
+Tell me a bedtime story about a robot who wants to become human.
+```
+
+Commentary: Only a few experts fire (e.g., 2 of 8), demonstrating computational efficiency.
+
+---
+
+## 📊 Bonus: Mixed-Domain Prompt to Trigger Overlap
+
+**Goal**: Combine multiple expert domains in one prompt.
+
+### Prompt:
+
+```
+Draft a legal disclaimer for a calculator app that predicts lottery numbers using AI.
+```
+
+Expected: Shows multi-expert tension or overlap.
+
+---
+
+## 🗣 Suggested Commentary During the Demo
+
+* “Notice how this model is sparsely activated — only a subset of experts fire.”
+* “Unlike dense models, this one dynamically routes based on task type.”
+* “We can simulate expert activation patterns even if Ollama doesn’t show routing logs.”
+* “This routing is both the strength and the Achilles’ heel of MoE models.”
+
+---
+
+## 🔧 Optional Tools
+
+* Use `ollama run deepseek` or equivalent command line calls for live demos.
+* If routing logs or heatmaps are available, show them on-screen.
+* Optionally time or profile token generation to demonstrate efficiency.
+
+---
+
+Let me know if you want this demo converted into a slide deck or terminal script.
+
+
 
 
 ---
