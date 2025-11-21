@@ -93,15 +93,7 @@
 **Live Walkthrough:**
 
 * Visit [https://chat.deepseek.com](https://chat.deepseek.com)
-* Prompt examples:
-
-  * "Summarize this financial report for a non-technical manager."
-  * "Give me five growth hacks for a small D2C apparel brand."
-
-**Student Task:**
-
-* Use DeepSeek to improve a business idea or startup concept.
-* Share your result with your neighbor (2 min discussion).
+* link
 
 **Bonus Tools (Optional):**
 
