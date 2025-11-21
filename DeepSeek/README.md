@@ -1128,16 +1128,6 @@ Expected: Shows multi-expert tension or overlap.
 
 ---
 
-## 🔧 Optional Tools
-
-* Use `ollama run deepseek` or equivalent command line calls for live demos.
-* If routing logs or heatmaps are available, show them on-screen.
-* Optionally time or profile token generation to demonstrate efficiency.
-
----
-
-Let me know if you want this demo converted into a slide deck or terminal script.
-
 
 
 
