@@ -402,7 +402,7 @@
 ## The Software Threat
 
 * The first of these is the horrible Linux drivers for AMD GPUs.
-* Remember we talked about how AMD has inexplicably allowed these drivers to suck
+* Remember we talked about how AMD has inexplicably allowed these drivers to be really bad
 * for years despite leaving massive amounts of money on the table?
 * Well, amusingly enough, the infamous hacker
 * ---->>>>> George Hotz
