@@ -103,6 +103,7 @@ Why does this matter? Because it's not just a technical marvel — it's a sign t
 
 * [https://flowiseai.com](https://flowiseai.com) – drag-and-drop AI workflows.
 * [https://replicate.com](https://replicate.com) – try models instantly. Prompt: "I want to build a portal gun for interdimensional travel. Can you help?"
+* Locally install n8n and connect to ollama with deepseek
 
 ---
 
