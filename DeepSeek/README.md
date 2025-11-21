@@ -514,7 +514,9 @@
 *  which effectively doubles inference speed without sacrificing much quality.
 *  The clever part is they maintain the complete causal chain of predictions,
 *  so the model isn't just guessing— it's making structured, contextual predictions.
-*  One of their most innovative developments is what they call Multi-head Latent Attention (MLA).
+
+## One of their most innovative developments is what they call Multi-head Latent Attention (MLA)
+
 *  This is a breakthrough in how they handle what are called the Key-Value indices,
 *  which are basically how individual tokens are represented in the attention mechanism within
 *  the Transformer architecture.
