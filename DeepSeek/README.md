@@ -142,7 +142,7 @@
 
 ## No Code AI and DeepSeek
 
-* link
+* [Ollama Deepseek](https://ollama.com/library/deepseek-r1)
 
 ## 🔧 Expanded Section: DeepSeek AI for No-Code Builders (Hands-On Lab)
 
