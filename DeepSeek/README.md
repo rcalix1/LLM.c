@@ -652,7 +652,9 @@
 *    from the interaction between the model and the reinforcement learning environment.
 *     The model would literally stop itself, flag potential issues in its reasoning,
 *  and restart with a different approach, all without being explicitly trained to do this.
-*  The full R1 model built on these insights by introducing what they call "cold-start"
+
+## The full R1 model built on these insights by introducing what they call "cold-start"
+
 *   data— a small set of high-quality examples— before applying their RL techniques.
 *    They also solved one of the major challenges in reasoning models: language consistency.
 *     Previous attempts at chain-of-thought reasoning often resulted in models mixing
@@ -697,7 +699,9 @@
 *  The company's supposed moats in hardware, software, and efficiency are all showing concerning cracks.
 *  The whole world— thousands of the smartest people on the planet, backed by untold billions
 *  of dollars of capital resources— are trying to assail them from every angle.
-*  On the hardware front, innovative architectures from Cerebras and Groq demonstrate that NVIDIA's interconnect
+  
+## On the hardware front, innovative architectures from Cerebras and Groq demonstrate that NVIDIA's interconnect
+
 *  advantage— a cornerstone of its data center dominance— can be circumvented through radical redesigns.
 *  Cerebras' wafer-scale chips and Groq's deterministic compute approach deliver compelling
 *  performance without needing NVIDIA's complex interconnect solutions.
@@ -705,14 +709,18 @@
 *  silicon that could chip away at high-margin data center revenue.
 *  These aren't experimental projects anymore— Amazon alone is building out massive infrastructure
 *   with over 400,000 custom chips for Anthropic.
-*   The software moat appears equally vulnerable.
+  
+## The software moat appears equally vulnerable.
+
 *   New high-level frameworks like MLX, Triton, and JAX are abstracting away CUDA's importance, while efforts to improve
 *   AMD drivers could unlock much cheaper hardware alternatives.
 *   The trend toward higher-level abstractions mirrors how assembly language gave way to C/C++, suggesting CUDA's
 *   dominance may be more temporary than assumed.
 *   Most importantly, we're seeing the emergence of LLM-powered code translation that could automatically
 *   port CUDA code to run on any hardware target, potentially eliminating one of NVIDIA's strongest lock-in effects.
-*   Perhaps most devastating is DeepSeek's recent efficiency breakthrough, achieving comparable model performance
+
+## Perhaps most devastating is DeepSeek's recent efficiency breakthrough, achieving comparable model performance
+
 *   at approximately 1/45th the compute cost.
 *   This suggests the entire industry has been massively over-provisioning compute resources.
 *   Combined with the emergence of more efficient inference architectures through chain-of-thought models,
@@ -721,7 +729,10 @@
 *     it suggests either NVIDIA's customers are burning cash unnecessarily or margins must come down dramatically.
 * The fact that TSMC will manufacture competitive chips for any well-funded customer puts a natural
 * ceiling on NVIDIA's architectural advantages.
-* But more fundamentally, history shows that markets eventually find a way around artificial bottlenecks
+
+
+## But more fundamentally, history shows that markets eventually find a way around artificial bottlenecks
+
 * that generate super-normal profits.
 * When layered together, these threats suggest NVIDIA faces a much rockier path to maintaining its current
 * growth trajectory and margins than its valuation implies.
