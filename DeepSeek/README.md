@@ -549,7 +549,10 @@
 *   They only need about 20 of their GPUs' streaming multiprocessors (SMs) for communication,
 *   leaving the rest free for computation.
 *   The result is much higher GPU utilization than typical training setups achieve.
-*   Another very smart thing they did is to use what is known as a Mixture-of-Experts (MOE) Transformer
+
+  
+## Another very smart thing they did is to use what is known as a Mixture-of-Experts (MOE) Transformer
+
 *   architecture, but with key innovations around load balancing.
 *   As you might know, the size or capacity of an AI model is often measured in terms of the number
 *    of parameters the model contains.
